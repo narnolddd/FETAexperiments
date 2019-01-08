@@ -1,0 +1,36 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-ordered.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Likelihood": {
+      "Start": 23,
+      "Interval": 1,
+      "MaxNodes": 1000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1,
+      "End": 200000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.RankPreferentialAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "Weight": 0.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}

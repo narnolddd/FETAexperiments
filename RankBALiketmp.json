@@ -1,0 +1,43 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/RankBA900.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Likelihood": {
+      "Start": 1,
+      "Interval": 1,
+      "MaxNodes": 1000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1,
+      "End": 1000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.RankPreferentialAttachment",
+          "Weight": 1.0,
+          "Alpha":0.5
+        }
+      ]
+    },
+    {
+      "Start": 1000,
+      "End": 1000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "Weight": 1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}

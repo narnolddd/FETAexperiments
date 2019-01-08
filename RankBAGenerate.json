@@ -1,0 +1,44 @@
+{
+  "Data": {
+    "GraphInputFile": "seed_graphs/clique-5.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputFile": "experiments/NAME.dat",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1,
+      "Interval": 1,
+      "MaxTime": 1000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1,
+      "End": TTT,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.RankPreferentialAttachment",
+          "Weight": 1.0,
+          "Alpha":0.5
+        }
+      ]
+    },
+    {
+      "Start": TTT,
+      "End": 1000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "Weight": 1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.PreferentialAttachment",
+    "NoRecipients": 3
+  }
+}
