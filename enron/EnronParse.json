@@ -1,0 +1,16 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "ParseTest": {
+      "Start": 514912927,
+      "Interval":1000000,
+      "MaxNodes": 100000,
+      "FileName": "experiments/enron/enron.feta"
+    }
+  }
+}

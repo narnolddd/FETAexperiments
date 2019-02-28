@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/citations/Citations_Copy_Undir.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 10,
+      "Interval":10,
+      "MaxNodes": 10000,
+      "PrintDegVector": false,
+      "FileName": "experiments/Citations_Copy_Undir_Measurements.dat"
+    }
+  }
+}
