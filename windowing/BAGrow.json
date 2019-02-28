@@ -3,7 +3,7 @@
     "GraphInputFile": "seed_graphs/clique-5.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/windowing/BA100000.dat",
+    "GraphOutputFile": "experiments/windowing/BA1000000.dat",
     "Directed": false
   },
   "Action": {
