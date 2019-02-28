@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/citations/Citations_Copy_Undir.dat",
+    "GraphInputFile": "experiments/citations/Citations_Copy_Undir_AgeTri.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -11,7 +11,7 @@
       "Interval":10,
       "MaxNodes": 10000,
       "PrintDegVector": false,
-      "FileName": "experiments/Citations_Copy_Undir_Measurements.dat"
+      "FileName": "experiments/citations/Citations_Copy_Undir_AgeTri_Measurements.dat"
     }
   }
 }

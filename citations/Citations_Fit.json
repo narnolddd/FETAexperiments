@@ -3,36 +3,40 @@
     "GraphInputFile": "data/cit-HepPh-ordered.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/citations/Citations_Copy_Undir_AgeTri.dat",
     "Directed": false
   },
   "Action": {
-    "Grow": {
+    "FitMixedModel": {
       "Start": 100,
-      "Interval": 1,
-      "MaxNodes": 10000
+      "Interval": 10,
+      "MaxNodes": 100,
+      "Granularity": 100
     }
   },
   "ObjectModel": [
     {
-      "Start": 1,
+      "Start": 10,
       "End": 100000,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreeWithAgeing",
-          "Weight": 0.95,
+          "Weight": 1.0,
           "AgeingExponent": 0.25
         },
         {
           "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.05
+          "Weight": 1.0,
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0,
         }
       ]
     }
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.Clone",
-    "FileName": "experiments/citationstest.feta"
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
   }
 }
