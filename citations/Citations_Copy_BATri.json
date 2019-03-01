@@ -3,7 +3,7 @@
     "GraphInputFile": "data/cit-HepPh-ordered.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/citations/Citations_Copy_Undir_BATri.dat",
+    "GraphOutputFile": "experiments/citations/Citations_Copy_Undir_BA.dat",
     "Directed": false
   },
   "Action": {
@@ -20,11 +20,7 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 0.93
-        },
-        {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.07
+          "Weight": 1.0
         }
       ]
     }

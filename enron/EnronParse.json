@@ -9,7 +9,7 @@
     "ParseTest": {
       "Start": 514912927,
       "Interval":1000000,
-      "MaxNodes": 100000,
+      "MaxTime": 1609275226,
       "FileName": "experiments/enron/enron.feta"
     }
   }
