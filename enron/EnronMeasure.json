@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputFile": "experiments/enron/Enron_Copy_BATriRand.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -8,10 +8,10 @@
   "Action": {
     "Measure": {
       "Start": 514912927,
-      "Interval":1000000,
+      "Interval":10000000,
       "MaxTime": 1716720597,
       "PrintDegVector": false,
-      "FileName": "experiments/enron/enron_measurements.dat"
+      "FileName": "experiments/enron/enron_BATriRand_measurements.dat"
     }
   }
 }

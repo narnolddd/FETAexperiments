@@ -3,12 +3,12 @@
     "GraphInputFile": "experiments/enron/enron.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/enron/Enron_Copy_BATri.dat",
+    "GraphOutputFile": "experiments/enron/Enron_Copy_BATriRand.dat",
     "Directed": false
   },
   "Action": {
     "Grow": {
-      "Start": 514912927,
+      "Start": 904674000,
       "Interval": 1000,
       "MaxTime": 1716720597
     }
@@ -20,11 +20,15 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 0.9
+          "Weight": 0.85
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.1
         },
         {
           "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.1
+          "Weight": 0.05
         }
       ]
     }

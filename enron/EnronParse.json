@@ -7,9 +7,9 @@
   },
   "Action": {
     "ParseTest": {
-      "Start": 514912927,
+      "Start": 904674000,
       "Interval":1000000,
-      "MaxTime": 2609275226,
+      "MaxTime": 1716720597,
       "FileName": "experiments/enron/enron.feta"
     }
   }

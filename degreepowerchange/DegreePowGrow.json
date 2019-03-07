@@ -3,20 +3,20 @@
     "GraphInputFile": "seed_graphs/clique-5.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/degreepowerchange/DEGPOWGRAPH-1pt2-1.dat",
+    "GraphOutputFile": "experiments/degreepowerchange/NAME.dat",
     "Directed": false
   },
   "Action": {
     "Grow": {
       "Start": 1,
       "Interval": 1,
-      "MaxNodes": 10000
+      "MaxNodes": 1000
     }
   },
   "ObjectModel": [
     {
       "Start": 1,
-      "End": 5000,
+      "End": TTT,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "Start": 5000,
-      "End": 12000,
+      "Start": TTT,
+      "End": 1200,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",

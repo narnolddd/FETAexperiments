@@ -3,7 +3,7 @@
     "GraphInputFile": "data/cit-HepPh-ordered.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "Directed": false
+    "Directed": true
   },
   "Action": {
     "FitMixedModel": {
@@ -19,17 +19,17 @@
       "End": 100000,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreeWithAgeing",
-          "Weight": 1.0,
-          "AgeingExponent": 0.25
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "Weight": 1.0
         },
         {
           "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 1.0,
+          "Weight": 1.0
         },
         {
-          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
           "Weight": 1.0,
+          "UseInDegree": false
         }
       ]
     }

@@ -9,7 +9,7 @@ with open(file,'r') as f:
         if i == 0:
             continue
         parts=line.strip().split()
-        data.append(dict(src=parts[0],dst=parts[1],time=int(parts[3])))
+        data.append(dict(src=parts[0].strip(),dst=parts[1].strip(),time=int(parts[3].strip())))
 
 reordered = sorted(data, key = itemgetter('time'))
 

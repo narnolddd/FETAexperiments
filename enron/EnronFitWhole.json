@@ -7,15 +7,15 @@
   },
   "Action": {
     "FitMixedModel": {
-      "Start": 514912927,
-      "Interval": 1000,
+      "Start": 904674000,
+      "Interval": 1000000,
       "MaxTime": 1716720597,
       "Granularity": 100
     }
   },
   "ObjectModel": [
     {
-      "Start": 514912927,
+      "Start": 904674000,
       "End": 1716720600,
       "Components": [
         {
