@@ -19,7 +19,7 @@ with open(file_grow,'r') as fgrow:
 
 times = range(100,1000,100)
 
-for ex in range(10):
+for ex in range(50):
     for time in times:
         tmp = re.sub("NAME","DegreePow-1.2-1-"+str(time),growdata)
         tmp = re.sub("TTT",str(time),tmp)
