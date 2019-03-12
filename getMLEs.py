@@ -3,12 +3,12 @@ import math
 import matplotlib.pyplot as plt
 from textwrap import wrap
 
-experiments=50
+experiments=10
 
 MLEtable = np.zeros((9,experiments),dtype=float)
 
 for ex in range(experiments):
-    file = "fromLarry/BARank1000results"+str(ex)+".dat"
+    file = "degreepowerchange/degreepower1.2-1-1000results"+str(ex)+".dat"
     lines=[]
     with open(file,'r') as f:
         while True:
@@ -50,7 +50,7 @@ ax0.set_ylabel('MLE of change point time \n (# iterations)')
 
 ax1.plot(truevals,mse, marker='o')
 #ax1.set_title('Estimation error')
-ax1.set_ylim(0,20)
+ax1.set_ylim(0,100)
 ax1.set_ylabel('RMSE (# iterations)')
 
 plt.tight_layout(h_pad=0)

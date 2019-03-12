@@ -1,0 +1,41 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/sx_no_dup.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 1255094266,
+      "Interval": 10000,
+      "MaxTime": 1457261724,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1254291078,
+      "End": 1557261725,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreeWithAgeing",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}

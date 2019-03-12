@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/degreepowerchange/DegreePow-1.2-1-200.dat",
+    "GraphInputFile": "experiments/degreepowerchange/DegreePow-1.2-1-900.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
     "Directed": false
@@ -15,7 +15,7 @@
   "ObjectModel": [
     {
       "Start": 1,
-      "End": 370,
+      "End": 1000,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "Start": 370,
+      "Start": 1000,
       "End": 1000,
       "Components": [
         {

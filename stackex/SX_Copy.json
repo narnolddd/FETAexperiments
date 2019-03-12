@@ -1,0 +1,41 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/sx_no_dup.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/stackex/SX_Copy_DegAgeRandTri.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1255094266,
+      "Interval": 1000,
+      "MaxTime": 1457261724
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1253094266,
+      "End": 1458261724,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreeWithAgeing",
+          "Weight": 0.89
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.02
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.09
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Clone",
+    "FileName": "experiments/stackex/sx.feta"
+  }
+}

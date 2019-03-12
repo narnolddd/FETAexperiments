@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/citations/Citations_Copy_BATri.dat",
+    "GraphInputFile": "data/cit-HepPh-ordered.txt",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
