@@ -1,0 +1,20 @@
+Max likelihood : 1.3834810910675486
+0.89 DegreeWithAgeing 0.5
+0.11 DegreeWithAgeing 0.8
+0.0 DegreeWithAgeing 1.0
+Max likelihood : 1.3849643377348593
+0.01 DegreeWithAgeing 0.5
+0.99 DegreeWithAgeing 0.6
+0.0 DegreeWithAgeing 0.7
+Max likelihood : 1.6661086804250127
+0.74 DegreeWithAgeing 0.6
+0.25 Random
+0.01 TriangleClosure
+Max likelihood : 1.6656340571969048
+0.75 DegreeWithAgeing 0.6
+0.25 Random
+0.0 TriangleClosureDegree
+Max likelihood : 1.6656340571969048
+0.75 DegreeWithAgeing 0.6
+0.25 Random
+0.0 TriangleClosureInverseDegree

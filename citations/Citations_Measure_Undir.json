@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "data/cit-HepPh-ordered.txt",
+    "GraphInputFile": "experiments/citations/Citations_Copy_BATriRand.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -8,10 +8,10 @@
   "Action": {
     "Measure": {
       "Start": 10,
-      "Interval":10,
+      "Interval":1000,
       "MaxNodes": 10000,
       "PrintDegVector": false,
-      "FileName": "experiments/citations/Citations_Copy_BATri_Measurements.dat"
+      "FileName": "experiments/citations/Citations_Undir_BATriRand_Measurements.dat"
     }
   }
 }
