@@ -8,7 +8,7 @@ grow_tmp = re.sub(".json","tmp.json",file_grow)
 file_like= "experiments/degreepowerchange/DegreePowLike.json"
 like_tmp = re.sub(".json","tmp.json",file_like)
 dump = "experiments/degreepowerchange/like.tmp"
-results = "experiments/degreepowerchange/degreepower1.2-1-1000results.dat"
+results = "experiments/degreepowerchange/degreepower1.2-1-10000results.dat"
 
 growdata = ""
 maxtime = 1000
@@ -17,7 +17,7 @@ maxtime = 1000
 with open(file_grow,'r') as fgrow:
     growdata = fgrow.read()
 
-times = range(100,1000,100)
+times = range(9000,10000,100)
 
 for ex in range(50):
     for time in times:
@@ -34,7 +34,7 @@ for ex in range(50):
         likedata= flike.read()
 
     likelihood_curves=[]
-    xpoints = range(10,1010,10)
+    xpoints = range(9010,10010,10)
     estimate = np.zeros(len(times))
 
     plt.style.use('seaborn-darkgrid')
@@ -47,7 +47,7 @@ for ex in range(50):
         tmplike = re.sub("NAME","DegreePow-1.2-1-"+str(time),likedata)
         curve = np.zeros(100)
         for i in range(1,101):
-            tmplike2 = re.sub("TTT",str(10*i),tmplike)
+            tmplike2 = re.sub("TTT",str(9000+10*i),tmplike)
             with open(like_tmp,'w') as f:
                 f.write(tmplike2)
                 f.close()

@@ -20,17 +20,17 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.5
+          "Weight": 1.0
         },
         {
           "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 0.5
+          "Weight": 0.0
         }
       ]
     }],
   "OperationModel":
   {
     "Name": "feta.operations.PreferentialAttachment",
-    "NoRecipients": 3
+    "InitialDegree": 2
   }
 }
