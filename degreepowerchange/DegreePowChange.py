@@ -1,7 +1,6 @@
 import os
 import re
 import numpy as np
-import matplotlib.pyplot as plt
 
 file_grow = "experiments/degreepowerchange/DegreePowGrow.json"
 grow_tmp = re.sub(".json","tmp.json",file_grow)
@@ -11,7 +10,6 @@ dump = "experiments/degreepowerchange/like.tmp"
 results = "experiments/degreepowerchange/degreepower1.2-1-10000results.dat"
 
 growdata = ""
-maxtime = 1000
 
 # Generate bunch of networks with changepoints at different times
 with open(file_grow,'r') as fgrow:
@@ -19,7 +17,7 @@ with open(file_grow,'r') as fgrow:
 
 times = range(9000,10000,100)
 
-for ex in range(50):
+for ex in range(10):
     for time in times:
         tmp = re.sub("NAME","DegreePow-1.2-1-"+str(time),growdata)
         tmp = re.sub("TTT",str(time),tmp)
@@ -36,9 +34,6 @@ for ex in range(50):
     likelihood_curves=[]
     xpoints = range(9010,10010,10)
     estimate = np.zeros(len(times))
-
-    plt.style.use('seaborn-darkgrid')
-    palette = plt.get_cmap('Set1')
 
     num=0
     fres = open(re.sub("results","results"+str(ex),results),'w')
@@ -58,12 +53,5 @@ for ex in range(50):
         likelihood_curves.append(curve)
         print(curve)
         fres.write(np.array2string(curve,precision=5,separator=" "))
-        plt.plot(xpoints,curve,marker='', color=palette(num),linewidth=1, label="t="+str(time))
         num+=1
     fres.close()
-
-plt.legend()
-plt.title("Likelihoods of different changepoint times Degree Power 1.2 -> Degree Power 1.0")
-plt.xlabel("Time")
-plt.ylabel("C0 Likelihood")
-plt.show()
