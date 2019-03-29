@@ -21,7 +21,7 @@
         {
           "ComponentName": "feta.objectmodels.DegreePower",
           "Weight": 1.0,
-          "Power": 1.05
+          "Power": 1.0
         }
       ]
     },
@@ -32,7 +32,7 @@
         {
           "ComponentName": "feta.objectmodels.DegreePower",
           "Weight": 1.0,
-          "Power": 1.0
+          "Power": 0.95
         }
       ]
     }
