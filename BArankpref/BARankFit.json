@@ -1,0 +1,37 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/BArankpref/NAME.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 100,
+      "Interval": 10,
+      "MaxNodes": 100,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 10,
+      "End": 100000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RankPreferentialAttachment",
+          "Weight": 1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}
