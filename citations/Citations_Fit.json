@@ -7,9 +7,9 @@
   },
   "Action": {
     "FitMixedModel": {
-      "Start": 100,
+      "Start": 35875,
       "Interval": 10,
-      "MaxNodes": 10000,
+      "MaxTime": 38556,
       "Granularity": 100
     }
   },
@@ -27,7 +27,7 @@
           "Weight": 1.0
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "ComponentName": "feta.objectmodels.TriangleClosureInverseDegree",
           "Weight":1.0
         }
       ]

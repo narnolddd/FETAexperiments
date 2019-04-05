@@ -6,7 +6,7 @@ file_grow = "experiments/degreepowerchange/DegreePowGrow.json"
 grow_tmp = re.sub(".json","tmp.json",file_grow)
 file_like= "experiments/degreepowerchange/DegreePowLike.json"
 like_tmp = re.sub(".json","tmp.json",file_like)
-dump = "experiments/degreepowerchange/like.tmp"
+dump = "experiments/degreepowerchange/like1-1.05.tmp"
 results = "experiments/degreepowerchange/degreepower1-1.05-10000results.dat"
 
 growdata = ""

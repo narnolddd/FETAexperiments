@@ -8,7 +8,7 @@ experiments=10
 MLEtable = np.zeros((9,experiments),dtype=float)
 
 for ex in range(experiments):
-    file = "degreepowerchange/degreepower1.2-1-1000results"+str(ex)+".dat"
+    file = "degreepowerchange/degreepower1-0.95-10000results"+str(ex)+".dat"
     lines=[]
     with open(file,'r') as f:
         while True:
@@ -21,11 +21,11 @@ for ex in range(experiments):
     params = [[float(r.strip()) for r in row.strip().split()] for row in paramstring]
 
     for i in range(9):
-        MLEtable[i,ex]=(np.argmax(params[i])+1)*10
+        MLEtable[i,ex]=9000+(np.argmax(params[i])+1)*10
 
 means = [sum(row)/experiments for row in MLEtable]
 sds = [math.sqrt(sum((MLEtable[i,:] - means[i])**2)/experiments) for i in range(9)]
-truevals = range(100,1000,100)
+truevals = range(9000,9900,100)
 mse = [math.sqrt(sum((truevals[j] - MLEtable[j,:])**2)/experiments) for j in range(9)]
 kse = [max(abs(truevals[j]-MLEtable[j,:])) for j in range(9)]
 
@@ -39,6 +39,8 @@ ax1.xaxis.label.set_fontsize(12)
 #fig.suptitle('Barabasi-Albert to Rank Preference')
 plt.xlabel('Iteration number corresponding to changepoint')
 
+print(len(truevals), len(means))
+
 ax0.errorbar(truevals,means,yerr=sds, fmt='o')
 ax0.plot(truevals,truevals, linestyle='--', linewidth=1, label="Correct changepoint time")
 #ax0.set_title('Estimated change point times (averaged over 50 experiments)')
@@ -50,7 +52,7 @@ ax0.set_ylabel('MLE of change point time \n (# iterations)')
 
 ax1.plot(truevals,mse, marker='o')
 #ax1.set_title('Estimation error')
-ax1.set_ylim(0,100)
+ax1.set_ylim(0,600)
 ax1.set_ylabel('RMSE (# iterations)')
 
 plt.tight_layout(h_pad=0)
