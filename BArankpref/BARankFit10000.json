@@ -1,37 +1,37 @@
 {
   "Data": {
-    "GraphInputFile": "seed_graphs/clique-5.dat",
+    "GraphInputFile": "experiments/BArankpref/NAME.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/BArankpref/NAME.dat",
     "Directed": false
   },
   "Action": {
-    "Grow": {
-      "Start": 1,
-      "Interval": 1,
-      "MaxNodes": 100
+    "FitMixedModel": {
+      "Start": 100,
+      "Interval": 10,
+      "MaxNodes": 10000,
+      "Granularity": 100
     }
   },
   "ObjectModel": [
     {
-      "Start": 1,
-      "End": 11000,
+      "Start": 10,
+      "End": 100000,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": AAA,
+          "Weight": 1.0
         },
         {
           "ComponentName": "feta.objectmodels.RankPreferentialAttachment",
-          "Weight": BBB
+          "Weight": 1.0
         }
       ]
     }
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.PreferentialAttachment",
+    "Name": "feta.operations.Email",
     "NoRecipients": 3
   }
 }

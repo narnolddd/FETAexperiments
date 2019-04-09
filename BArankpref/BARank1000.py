@@ -34,6 +34,7 @@ for ex in range(numExperiments):
             with open(file_fit,'r') as ffit:
                 fitdata = ffit.read()
             tmp = re.sub("NAME","BARank-"+str(beta),fitdata)
+            tmp = re.sub("NUM",link,)
             with open(fit_tmp,'w') as f2:
                 f2.write(tmp)
                 f2.close()
