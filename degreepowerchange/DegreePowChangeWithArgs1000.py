@@ -8,14 +8,14 @@ param2 = str(sys.argv[2])
 print(param1+" "+param2)
 
 
-growtemplate = "experiments/degreepowerchange/DegPowGrowTemplate.json"
-liketemplate = "experiments/degreepowerchange/DegPowLikeTemplate.json"
-file_grow = "experiments/degreepowerchange/DegreePowGrow"+param1+"-"+param2+".json"
+growtemplate = "experiments/degreepowerchange/DegPowGrowTemplate1000.json"
+liketemplate = "experiments/degreepowerchange/DegPowLikeTemplate1000.json"
+file_grow = "experiments/degreepowerchange/DegreePowGrow1000"+param1+"-"+param2+".json"
 grow_tmp = re.sub(".json","tmp.json",file_grow)
-file_like= "experiments/degreepowerchange/DegreePowLike"+param1+"-"+param2+".json"
+file_like= "experiments/degreepowerchange/DegreePowLike1000"+param1+"-"+param2+".json"
 like_tmp = re.sub(".json","tmp.json",file_like)
-dump = "experiments/degreepowerchange/like"+param1+"-"+param2+".json"
-results = "experiments/degreepowerchange/degreepower"+param1+"-"+param2+"-10000results.dat"
+dump = "experiments/degreepowerchange/like1000"+param1+"-"+param2+".json"
+results = "experiments/degreepowerchange/degreepower"+param1+"-"+param2+"-1000results.dat"
 
 growdata = ""
 
@@ -44,11 +44,11 @@ with open(file_like,'w') as f2:
 with open(file_grow,'r') as fgrow:
     growdata = fgrow.read()
 
-times = range(9000,10000,100)
+times = range(100,1100,100)
 
 for ex in range(10):
     for time in times:
-        tmp = re.sub("NAME","DegreePow-"+param1+"-"+param2+"-"+str(time),growdata)
+        tmp = re.sub("NAME","DegreePow1000-"+param1+"-"+param2+"-"+str(time),growdata)
         tmp = re.sub("TTT",str(time),tmp)
         with open(grow_tmp,'w') as f:
             f.write(tmp)
@@ -61,17 +61,17 @@ for ex in range(10):
         likedata= flike.read()
 
     likelihood_curves=[]
-    xpoints = range(9010,10010,10)
+    xpoints = range(10,1010,10)
     estimate = np.zeros(len(times))
 
     num=0
     fres = open(re.sub("results","results"+str(ex),results),'w')
     for time in times:
         print(time)
-        tmplike = re.sub("NAME","DegreePow-"+param1+"-"+param2+"-"+str(time),likedata)
+        tmplike = re.sub("NAME","DegreePow1000-"+param1+"-"+param2+"-"+str(time),likedata)
         curve = np.zeros(100)
         for i in range(1,101):
-            tmplike2 = re.sub("TTT",str(9000+10*i),tmplike)
+            tmplike2 = re.sub("TTT",str(10*i),tmplike)
             with open(like_tmp,'w') as f:
                 f.write(tmplike2)
                 f.close()
