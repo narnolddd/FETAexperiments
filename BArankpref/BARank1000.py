@@ -6,7 +6,7 @@ nolinks = ['1','2','3','4','5']
 
 file_grow = "experiments/BArankpref/BARankGrow1000.json"
 grow_tmp = re.sub(".json","tmp.json",file_grow)
-file_fit= "experiments/BArankpref/BARankFit-NUM-1000.json"
+file_fit= "experiments/BArankpref/BARankFit.json"
 fit_tmp = re.sub(".json","tmp.json",file_fit)
 dump = "experiments/BArankpref/like.tmp"
 results = "experiments/BArankpref/BARank1000-NUM-results.dat"
@@ -31,8 +31,7 @@ for ex in range(numExperiments):
             os.system("java -jar feta3-1.0.0.jar "+grow_tmp)
             os.system("rm "+grow_tmp)
 
-            file_fit_2 = re.sub("NUM",link,file_fit)
-            with open(file_fit_2,'r') as ffit:
+            with open(file_fit,'r') as ffit:
                 fitdata = ffit.read()
             tmp = re.sub("NAME","BARank-"+str(beta),fitdata)
             with open(fit_tmp,'w') as f2:
