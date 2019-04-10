@@ -22,7 +22,7 @@ for ex in range(numExperiments):
         tmp = re.sub("NOLINKS",link, growdata)
         for beta in betas:
             beta = round(beta,1)
-            tmp = re.sub("NAME","BARank-"+link+"-"+str(beta),tmp)
+            tmp = re.sub("NAME","BARank-10000-"+link+"-"+str(beta),tmp)
             tmp = re.sub("AAA",str(beta),tmp)
             tmp = re.sub("BBB",str(1-beta),tmp)
             with open(grow_tmp,'w') as f:
@@ -33,8 +33,8 @@ for ex in range(numExperiments):
 
             with open(file_fit,'r') as ffit:
                 fitdata = ffit.read()
-            tmp = re.sub("NAME","BARank-"+str(beta),fitdata)
-            tmp = re.sub("NUM",link,)
+            tmp = re.sub("NAME","BARank-10000"+link+"-"+str(beta),fitdata)
+            tmp = re.sub("NUM",link,tmp)
             with open(fit_tmp,'w') as f2:
                 f2.write(tmp)
                 f2.close()

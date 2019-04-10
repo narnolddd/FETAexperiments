@@ -22,21 +22,21 @@ for ex in range(numExperiments):
         tmp = re.sub("NOLINKS",link, growdata)
         for beta in betas:
             beta = round(beta,1)
-            tmp = re.sub("NAME","BARank-"+link+"-"+str(beta),tmp)
-            tmp = re.sub("AAA",str(beta),tmp)
-            tmp = re.sub("BBB",str(1-beta),tmp)
+            tmp2 = re.sub("NAME","BARank-1000-"+link+"-"+str(beta),tmp)
+            tmp2 = re.sub("AAA",str(beta),tmp2)
+            tmp2 = re.sub("BBB",str(1-beta),tmp2)
             with open(grow_tmp,'w') as f:
-                f.write(tmp)
+                f.write(tmp2)
                 f.close()
             os.system("java -jar feta3-1.0.0.jar "+grow_tmp)
             os.system("rm "+grow_tmp)
 
             with open(file_fit,'r') as ffit:
                 fitdata = ffit.read()
-            tmp = re.sub("NAME","BARank-"+str(beta),fitdata)
-            tmp = re.sub("NUM",link,)
+            tmp3 = re.sub("NAME","BARank-1000"+link+"-"+str(beta),fitdata)
+            tmp3 = re.sub("NUM",link,tmp3)
             with open(fit_tmp,'w') as f2:
-                f2.write(tmp)
+                f2.write(tmp3)
                 f2.close()
             os.system("java -jar feta3-1.0.0.jar "+fit_tmp+" > "+dump)
             os.system("rm "+fit_tmp)
