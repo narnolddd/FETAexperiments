@@ -1,17 +1,17 @@
 {
   "Data": {
-    "GraphInputFile": "data/cit-HepPh-ordered.txt",
+    "GraphInputFile": "experiments/citations/Citations_Last10_DP1.3.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
   },
   "Action": {
     "Measure": {
-      "Start": 35875,
-      "Interval":10,
-      "MaxNodes": 34546,
+      "Start": 1001615559,
+      "Interval":1000000,
+      "MaxNodes": 1015956000,
       "PrintDegVector": false,
-      "FileName": "experiments/citations/Citations_Last10_Measurements.dat"
+      "FileName": "experiments/citations/Citations_Last10_DP1.3_Measurements.dat"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "Data": {
+    "GraphInputFile": "seed_graphs/clique-5.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/degreepowerchange/growerror.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1,
+      "Interval": 1,
+      "MaxNodes": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1,
+      "End": 100000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power": 2.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.PreferentialAttachment",
+    "NoRecipients": 3
+  }
+}

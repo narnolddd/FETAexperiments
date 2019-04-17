@@ -1,34 +1,26 @@
 {
   "Data": {
-    "GraphInputFile": "data/cit-HepPh-ordered.txt",
+    "GraphInputFile": "data/cit-HepPh-new.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/citations/Citations_Last10_BATriInv10Rand.dat",
+    "GraphOutputFile": "experiments/citations/Citations_Last10_Rand.dat",
     "Directed": false
   },
   "Action": {
     "Grow": {
-      "Start": 35875,
+      "Start": 1001615559,
       "Interval": 10,
-      "MaxNodes": 30565
+      "MaxNodes": 34343
     }
   },
   "ObjectModel": [
     {
-      "Start": 1,
-      "End": 100000,
+      "Start": 1001615559,
+      "End": 1015956000,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 0.47
-        },
-        {
-          "ComponentName": "feta.objectmodels.TriangleClosureInverseDegree",
-          "Weight": 0.5
-        },
-        {
           "ComponentName": "feta.objectmodels.RandomAttachment",
-          "Weight": 0.03
+          "Weight": 1.0
         }
       ]
     }
@@ -36,7 +28,7 @@
   "OperationModel":
   {
     "Name": "feta.operations.Clone",
-    "FileName": "experiments/citations/CitationsOpModel.feta"
-    "Start": 35875
+    "FileName": "experiments/citations/CitationsNewOpModel.feta",
+    "Start": 1001615559
   }
 }

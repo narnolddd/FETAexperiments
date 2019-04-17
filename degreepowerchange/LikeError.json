@@ -1,0 +1,33 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/degreepowerchange/growerror.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Likelihood": {
+      "Start": 1,
+      "Interval": 1,
+      "MaxNodes": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1,
+      "End": 100000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power":2.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}
