@@ -16,12 +16,23 @@
   "ObjectModel": [
     {
       "Start": 1,
-      "End": 100000,
+      "End": 5000,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
           "Weight": 1.0,
           "Power": 2.0
+        }
+      ]
+    },
+    {
+      "Start": 5000,
+      "End": 15000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power": 1.0
         }
       ]
     }

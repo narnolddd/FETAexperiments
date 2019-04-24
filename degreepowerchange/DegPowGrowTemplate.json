@@ -27,7 +27,7 @@
     },
     {
       "Start": TTT,
-      "End": 15000,
+      "End": 110,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
