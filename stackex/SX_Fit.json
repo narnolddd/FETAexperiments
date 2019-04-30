@@ -1,13 +1,14 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/stackex/sx_no_dup.txt",
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "Directed": false
+    "Directed": false,
+    "NoRecents": 25
   },
   "Action": {
     "FitMixedModel": {
-      "Start": 1255094266,
+      "Start": 1431316633,
       "Interval": 10000,
       "MaxTime": 1457261724,
       "Granularity": 100
@@ -15,11 +16,11 @@
   },
   "ObjectModel": [
     {
-      "Start": 1254291078,
+      "Start": 1431316633,
       "End": 1557261725,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreeWithAgeing",
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
           "Weight": 1.0
         },
         {

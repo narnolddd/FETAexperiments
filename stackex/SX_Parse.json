@@ -1,13 +1,13 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/stackex/sx_no_dup.txt",
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
   },
   "Action": {
     "ParseTest": {
-      "Start": 1255094266,
+      "Start": 1255315654,
       "Interval":1000000,
       "MaxTime": 1457261724,
       "FileName": "experiments/stackex/sx.feta"

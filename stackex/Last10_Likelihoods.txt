@@ -1,0 +1,14 @@
+Max likelihood : 3.2383483936286237
+0.47 Degree
+0.22 Random
+0.31 TriangleClosure
+
+Max likelihood : 2.118430066627129
+0.44 Degree
+0.38 Random
+0.18 TriangleClosureDegree
+
+Max likelihood : 3.3366595652073476
+0.6 Degree
+0.19 Random
+0.21 TriangleClosureInverseDegree

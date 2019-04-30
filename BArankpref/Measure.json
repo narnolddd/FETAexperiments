@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/BArankpref/NAMECompare10000.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 10,
+      "Interval":1000,
+      "MaxNodes": 10000,
+      "PrintDegVector": false,
+      "FileName": "experiments/BArankpref/NAME10000Measurements.dat"
+    }
+  }
+}

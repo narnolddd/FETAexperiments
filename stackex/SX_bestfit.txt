@@ -9,4 +9,60 @@
 Max likelihood : 3.7456994907062535
 0.89 DegreeWithAgeing 0.5
 0.02 Random
-0.09 TriangleClosure
+0.09 TriangleClosure (15 most recent)
+
+Max likelihood : 2.6971923932518633
+0.59 Degree
+0.32 Random
+0.09 TriangleClosure (1 most recent)
+
+Max likelihood : 3.0548905400902306
+0.53 Degree
+0.27 Random
+0.2 TriangleClosure (5 most recent)
+
+Max likelihood : 2.923090877431405
+0.56 Degree
+0.29 Random
+0.15 TriangleClosure (3 most recent)
+
+Max likelihood : 3.1896732296103982
+0.49 Degree
+0.25 Random
+0.26 TriangleClosure (10 most recent)
+
+Max likelihood : 3.2383483936286237
+0.47 Degree
+0.22 Random
+0.31 TriangleClosure (15 most recent)
+
+Max likelihood : 3.2477696060895767
+0.45 Degree
+0.21 Random
+0.34 TriangleClosure (20 most recent)
+
+Max likelihood : 2.1123520646852607
+0.41 Degree
+0.39 Random
+0.2 TriangleClosureDegree (20 most recent)
+
+Max likelihood : 3.3369077999342376
+0.6 Degree
+0.17 Random
+0.23 TriangleClosureInverseDegree (20 most recent)
+
+Max likelihood : 3.304674006485818
+0.6 Degree
+0.22 Random
+0.18 TriangleClosureInverseDegree (10 most recent)
+
+Max likelihood : 3.338846274247345
+0.6 Degree
+0.16 Random
+0.24 TriangleClosureInverseDegree (25 most recent)
+
+Max likelihood : 3.260222728380937
+0.44 Degree
+0.19 Random
+0.37 TriangleClosure (25 most recent)
+

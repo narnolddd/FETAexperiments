@@ -19,22 +19,8 @@
       "End": 1015957000,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 1.0,
-          "Power": 1.3
-        },
-        {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 1.0,
-          "Power": 1.0
-        },
-        {
-          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "ComponentName": "feta.objectmodels.DegreeModelComponent",
           "Weight": 1.0
-        },
-        {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":1.0
         }
       ]
     }

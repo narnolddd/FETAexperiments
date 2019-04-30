@@ -1,17 +1,17 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/stackex/SX_Copy_DegAgeRandTri.dat",
+    "GraphInputFile": "experiments/stackex/SX_Copy_DegRandTriInv.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
   },
   "Action": {
     "Measure": {
-      "Start": 1255094266,
-      "Interval":100000,
+      "Start": 1431316633,
+      "Interval":1000000,
       "MaxTime": 1457261724,
       "PrintDegVector": false,
-      "FileName": "experiments/stackex/SX_DegAgeRandTri_Measurements.dat"
+      "FileName": "experiments/stackex/SX_DegRandTriIv_Measurements.dat"
     }
   }
 }
