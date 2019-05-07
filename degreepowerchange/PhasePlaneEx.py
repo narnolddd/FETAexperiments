@@ -1,7 +1,6 @@
 import numpy as np
 import re
 import os
-import matplotlib.pyplot as plt
 
 params = [str(round(x,1)) for x in np.linspace(0.8,2.0,num=13)]
 experiments = 10
@@ -52,7 +51,7 @@ for ex in range(experiments):
                 tmp1 = re.sub("NAME", "PP-100-"+p1+"-"+p2,likedata)
                 tmp2 = re.sub("PARAM1",p1,tmp1)
                 tmp3 = re.sub("PARAM2",p2,tmp2)
-                tmp4 = re.sub("TTT",str(10*i),tmp3)
+                tmp4 = re.sub("TTT",str(4500 + 10*i),tmp3)
                 with open(liketmp,'w') as f:
                     f.write(tmp4)
                     f.close()
