@@ -3,7 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.colors as colors
 
-file = "PhasePlaneMLEs.txt"
+file = "PhasePlaneMLEs1000.txt"
 noParams = 13
 
 MLEmatrix = np.zeros((noParams, noParams), dtype=float)

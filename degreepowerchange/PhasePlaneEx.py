@@ -15,7 +15,7 @@ likefile = "experiments/degreepowerchange/PhasePlaneLike.json"
 likedata = ""
 liketmp = "experiments/degreepowerchange/PhasePlaneLike.tmp"
 
-MLEresults = "experiments/degreepowerchange/PhasePlaneMLEs.txt"
+MLEresults = "experiments/degreepowerchange/PhasePlaneMLEs1000.txt"
 
 dump = "experiments/degreepowerchange/dump.tmp"
 
