@@ -36,8 +36,8 @@ rdlinestyle = '-'
 mixlinestyle = '-'
 complinestyle = '--'
 
-mixturefiles = ["BADPRandTri_Measurements.dat"]
-componentfiles = ["BA_Measurements.dat", "Tri_Measurements.dat", "Rand_Measurements.dat", "DP1.3_Measurements.dat"]
+mixturefiles = ["BATriPFP-0.02_Measurements.dat"]
+componentfiles = ["BA_Measurements.dat", "Tri_Measurements.dat"]
 mixnames = [m.strip("_Measurements.dat") for m in mixturefiles]
 compnames = [c.strip("_Measurements.dat") for c in componentfiles]
 
@@ -46,7 +46,7 @@ components = [root+g for g in componentfiles]
 
 lineobjects={}
 
-mixlabel = "0.13 BA, 0.08 DP1.3, 0.71 Tri, 0.08 Rand"
+mixlabel = "0.32 PFP -0.02, 0.67 Tri, 0.01 BA"
 
 with open(realdata,'r') as rd:
     lines = rd.read().splitlines()

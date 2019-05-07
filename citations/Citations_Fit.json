@@ -3,6 +3,7 @@
     "GraphInputFile": "data/cit-HepPh-new.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
+    "NoRecents": 10,
     "Directed": false
   },
   "Action": {
@@ -20,6 +21,16 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "Weight": 1.0,
+          "Power": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.PFP",
+          "Weight": 1.0,
+          "Delta": -0.1
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
           "Weight": 1.0
         }
       ]
