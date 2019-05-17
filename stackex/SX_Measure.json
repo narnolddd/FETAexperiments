@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/stackex/SX_Copy_DegRandTriInv.dat",
+    "GraphInputFile": "experiments/stackex/SX_Copy_BA.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -11,7 +11,7 @@
       "Interval":1000000,
       "MaxTime": 1457261724,
       "PrintDegVector": false,
-      "FileName": "experiments/stackex/SX_DegRandTriIv_Measurements.dat"
+      "FileName": "experiments/stackex/SX_BA_Measurements.dat"
     }
   }
 }

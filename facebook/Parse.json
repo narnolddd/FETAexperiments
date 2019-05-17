@@ -1,0 +1,16 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/facebook.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "ParseTest": {
+      "Start": 100,
+      "Interval":10,
+      "MaxTime": 1232593783,
+      "FileName": "experiments/facebook/OpModel.feta"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/facebook.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false,
+    "NoRecents": 1
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 1229918502,
+      "Interval": 10000,
+      "MaxTime": 1232593783,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1229918502,
+      "End": 1232593784,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.PFP",
+          "Weight": 1.0,
+          "Delta": -0.02
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}

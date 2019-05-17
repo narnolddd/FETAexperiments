@@ -37,7 +37,7 @@ mixlinestyle = '-'
 complinestyle = '--'
 
 mixturefiles = ["DegRandTri_Measurements.dat"]
-componentfiles = []
+componentfiles = ["BA_Measurements.dat", "Tri_Measurements.dat", "Rand_Measurements.dat"]
 mixnames = [m.strip("_Measurements.dat") for m in mixturefiles]
 compnames = [c.strip("_Measurements.dat") for c in componentfiles]
 
