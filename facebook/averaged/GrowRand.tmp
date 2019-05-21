@@ -3,7 +3,7 @@
     "GraphInputFile": "experiments/facebook/facebook.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/facebook/DP0.8-EXPERIMENT.dat",
+    "GraphOutputFile": "experiments/facebook/averaged/Rand-9.dat",
     "Directed": false,
     "NoRecents": 15
   },

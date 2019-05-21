@@ -3,7 +3,7 @@
     "GraphInputFile": "experiments/facebook/facebook.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/facebook/Rand-EXPERIMENT.dat",
+    "GraphOutputFile": "experiments/facebook/averaged/BestMix-EXPERIMENT.dat",
     "Directed": false,
     "NoRecents": 15
   },
@@ -21,8 +21,18 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.RandomAttachment",
-          "Weight": 1.0
+          "Weight": 0.33
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.06
+        },
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 0.61,
+          "Power": 0.8
         }
+
       ]
     }
   ],

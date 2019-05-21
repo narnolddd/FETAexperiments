@@ -1,0 +1,6 @@
+Best mixture model is:
+
+Max likelihood : 1.367106209954821
+0.61 DegreePower 0.8
+0.33 Random
+0.06 TriangleClosure 15
