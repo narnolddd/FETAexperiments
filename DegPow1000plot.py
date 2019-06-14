@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # Set up figure
 
-fig, ax = plt.subplots(nrows=2,ncols=1,sharex=True)
+fig, ax = plt.subplots(nrows=2,ncols=1,figsize=(6,7), sharex=True)
 
 ax[0].xaxis.label.set_fontsize(12)
 ax[0].yaxis.label.set_fontsize(12)
@@ -19,6 +19,13 @@ linetype = defaultdict(lambda:'-')
 # linetype["['1.0', '1.2']"]= '--'
 # linetype["['1.0', '0.8']"]= '--'
 # linetype["['0.8', '1.0']"]= '--'
+linetype["['1.0', '0.9']"]='--'
+linetype["['0.9', '1.0']"]='--'
+
+mtype = defaultdict(lambda:'o')
+mtype["['1.2', '1.0']"]='^'
+mtype["['1.0', '0.9']"]='s'
+mtype["['1.0', '1.2']"]='D'
 
 thicc = defaultdict(lambda: 1)
 thicc["['1.2', '1.0']"]= 3
@@ -78,7 +85,7 @@ for comb in params:
         ax[1].fill_between(truevals,means-symerror,means+symerror,alpha=fillalphas[str(comb)], color=colourz[str(comb)], label=comb[0]+" to "+comb[1])
         ax[1].plot(truevals,means, color=colourz[str(comb)])
 
-    ax[0].plot(truevals,mse, marker='o', linestyle=linetype[str(comb)], linewidth=thicc[str(comb)], alpha=alphas[str(comb)], label=comb[0]+" to "+comb[1])
+    ax[0].plot(truevals,mse, marker=mtype[str(comb)], linestyle=linetype[str(comb)], linewidth=thicc[str(comb)], alpha=alphas[str(comb)], label=comb[0]+" to "+comb[1])
 
 ax[1].plot(truevals,truevals, linestyle='--', color='black')
 ax[1].legend(loc='upper left')

@@ -39,6 +39,8 @@ with open(file,'r') as f:
 RMSEmatrix = pd.DataFrame(RMSEmatrix, columns = [str(round(par,1)) for par in np.linspace(0.8, 2.0, num=13)])
 PEmatrix = pd.DataFrame(PEmatrix, columns = [str(round(par,1)) for par in np.linspace(0.8, 2.0, num=13)])
 
+plt.figure(figsize=(6,7))
+
 ax = sns.heatmap(RMSEmatrix, cmap="YlGnBu", norm=MidpointNormalize(midpoint=20),
                  yticklabels=[str(round(par,1)) for par in np.linspace(0.8, 2.0, num=13)],
                  cbar_kws={'label': 'RMS error (number of iterations)',
@@ -46,6 +48,6 @@ ax = sns.heatmap(RMSEmatrix, cmap="YlGnBu", norm=MidpointNormalize(midpoint=20),
 
 ax.set_ylabel('Degree power exponent pre-changepoint')
 ax.set_xlabel('Degree power exponent post-changepoint')
-plt.title('Detection of changepoint time in degree power models')
+#plt.title('Detection of changepoint time in degree power models')
 
 plt.show()

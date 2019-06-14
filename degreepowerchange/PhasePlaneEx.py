@@ -2,7 +2,7 @@ import numpy as np
 import re
 import os
 
-params = [str(round(x,1)) for x in np.linspace(0.8,2.0,num=13)]
+params = [str(round(x,2)) for x in np.linspace(0.8,2.0,num=25)]
 experiments = 10
 
 errors = np.array((len(params),len(params)))
@@ -15,7 +15,7 @@ likefile = "experiments/degreepowerchange/PhasePlaneLike.json"
 likedata = ""
 liketmp = "experiments/degreepowerchange/PhasePlaneLike.tmp"
 
-MLEresults = "experiments/degreepowerchange/PhasePlaneMLEs1000.txt"
+MLEresults = "experiments/degreepowerchange/PhasePlaneMLEs10000-finegrained.txt"
 
 dump = "experiments/degreepowerchange/dump.tmp"
 
@@ -46,6 +46,7 @@ for ex in range(experiments):
             os.system("rm "+growtmp)
 
             curve = np.zeros(100)
+            curvefile = "experiments/degreepowerchange/LIKELIHOODS-"+p1+"-"+p2+".txt"
 
             for i in range(1,101):
                 tmp1 = re.sub("NAME", "PP-100-"+p1+"-"+p2,likedata)
@@ -64,7 +65,11 @@ for ex in range(experiments):
 
                 os.system("rm "+dump)
 
-            print(curve)
+            with open(curvefile,'a') as cf:
+                for val in curve:
+                    cf.write(str(val)+" ")
+                cf.write("\n")
+                cf.close()
             max = np.argmax(curve)+1
             MLES[p1+"-"+p2].append(max)
 
