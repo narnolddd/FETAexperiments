@@ -3,7 +3,7 @@
     "GraphInputFile": "experiments/stackex/sx_reordered.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/stackex/SX_Copy_DegRandTriInv.dat",
+    "GraphOutputFile": "experiments/stackex/SX_Copy_BA.dat",
     "Directed": false,
     "NoRecents": 25
   },
@@ -21,15 +21,7 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 0.6
-        },
-        {
-          "ComponentName": "feta.objectmodels.RandomAttachment",
-          "Weight": 0.16
-        },
-        {
-          "ComponentName": "feta.objectmodels.TriangleClosureInverseDegree",
-          "Weight": 0.24
+          "Weight": 1.0
         }
       ]
     }

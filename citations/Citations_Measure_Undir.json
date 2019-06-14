@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/citations/Citations_Last10_DP1.3.dat",
+    "GraphInputFile": "experiments/citations/Citations_Last10_BATriPFP-0.1.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -11,7 +11,7 @@
       "Interval":1000000,
       "MaxNodes": 1015956000,
       "PrintDegVector": false,
-      "FileName": "experiments/citations/Citations_Last10_DP1.3_Measurements.dat"
+      "FileName": "experiments/citations/Citations_Last10_BATriPFP-0.1_Measurements.dat"
     }
   }
 }

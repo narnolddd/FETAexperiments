@@ -1,0 +1,35 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/facebook.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/facebook/averaged/Tri-EXPERIMENT.dat",
+    "Directed": false,
+    "NoRecents": 15
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1229918502,
+      "Interval": 1000,
+      "MaxTime": 1232593783
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1229918502,
+      "End": 1232593784,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Clone",
+    "FileName": "experiments/facebook/OpModel.feta",
+    "Start": 1229918502
+  }
+}

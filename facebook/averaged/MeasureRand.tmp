@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/averaged/Rand-9.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1229918502,
+      "Interval":100000,
+      "MaxNodes": 1232593783,
+      "PrintDegVector": false,
+      "FileName": "experiments/facebook/averaged/Rand-9-Measurements.dat"
+    }
+  }
+}

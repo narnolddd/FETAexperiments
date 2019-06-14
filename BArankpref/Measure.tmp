@@ -8,8 +8,8 @@
   "Action": {
     "Measure": {
       "Start": 10,
-      "Interval":1000,
-      "MaxNodes": 10000,
+      "Interval":10000,
+      "MaxNodes": 100000,
       "PrintDegVector": false,
       "FileName": "experiments/BArankpref/RP10000Measurements.dat"
     }

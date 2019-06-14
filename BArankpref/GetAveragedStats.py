@@ -1,13 +1,17 @@
 import os
 import numpy as np
 import re
+import powerlaw
+import itertools
 
 experiments=10
 
 root="experiments/BArankpref/"
 
 RPstats=root+"RP10000stats.dat"
+RPGammas=root+"RP10000gammas.dat"
 BAstats=root+"BA10000stats.dat"
+BAGammas=root+"BA10000gammas.dat"
 
 grow=root+"Grow.json"
 growtmp=root+"Grow.tmp"
@@ -39,6 +43,7 @@ with open(measuretmp, 'w') as f:
     f.close()
 
 for ex in range(experiments):
+    print("BA "+str(ex))
     os.system("java -jar feta3-1.0.0.jar "+growtmp)
     os.system("java -jar feta3-1.0.0.jar "+measuretmp)
 
@@ -48,7 +53,14 @@ for ex in range(experiments):
             g.write(stats+"\n")
             g.close()
         f.close()
-
+    with open(root+"BA10000MeasurementsDeg.dat",'r') as f:
+        frequencies = [int(a) for a in f.read().splitlines()[-1].split()]
+        degdist = list(itertools.chain.from_iterable([[i] * frequencies[i] for i in range(len(frequencies))]))
+        results=powerlaw.Fit(degdist)
+        with open(BAGammas,'a+') as g:
+            g.write(str(results.power_law.alpha)+"\n")
+            g.close()
+        f.close()
 
 # Do RP ones
 tmp1 = re.sub("NAME", "RP", growtxt)
@@ -64,6 +76,7 @@ with open(measuretmp, 'w') as f:
     f.close()
 
 for ex in range(experiments):
+    print("RP "+str(ex))
     os.system("java -jar feta3-1.0.0.jar "+growtmp)
     os.system("java -jar feta3-1.0.0.jar "+measuretmp)
 
@@ -71,5 +84,13 @@ for ex in range(experiments):
         stats = f.read().splitlines()[-1]
         with open(RPstats,'a+') as g:
             g.write(stats+"\n")
+            g.close()
+        f.close()
+    with open(root+"RP10000MeasurementsDeg.dat",'r') as f:
+        frequencies = [int(a) for a in f.read().splitlines()[-1].split()]
+        degdist = list(itertools.chain.from_iterable([[i] * frequencies[i] for i in range(len(frequencies))]))
+        results=powerlaw.Fit(degdist)
+        with open(RPGammas,'a+') as g:
+            g.write(str(results.power_law.alpha)+"\n")
             g.close()
         f.close()
