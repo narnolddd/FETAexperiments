@@ -5,12 +5,10 @@ import matplotlib.pyplot as plt
 
 # read file
 
-file = "degreepowerchange/growerror.dat"
-power1 = 2.0
-power2 = 1.0
-
-with open(file,'r') as f:
-    edgelist=f.read().splitlines()
+params = [str(round(x,1)) for x in np.linspace(0.8,2.0,num=13)]
+no_params = 13
+similarity_matrix = np.zeros((noParams, noParams), dtype=float)
+similarity_file = "SimilarityMatrix.txt"
 
 def compute_similarity(p1, p2, net):
     degrees = np.array([net.degree(node) for node in net.nodes()])
@@ -26,21 +24,25 @@ G = nx.Graph()
 times = range(100,10000,100)
 similarities=[]
 
-ct=0
-for edge in edgelist:
-    if ct == len(times):
-        break
-    src, dst, time = edge.split()
-    time = int(time)
-    if time>times[ct]:
-        similarities.append(compute_similarity(power1,power2,G))
-        ct= ct+1
-    G.add_edge(src,dst)
+def process_net(p1,p2,file):
+    param1, param2 = float(p1), float(p2)
+    G = nx.Graph()
+    with open(file,'r') as f:
+        edgelist = [line.split() for line in f.read().splitlines()]
+        f.close()
+    for edge in edgelist:
+        if int(edge[2]) > 5000:
+            break
+        G.add_edge(edge[0], edge[1])
+    sim = compute_similarity(param1,param2,G)
+    return sim
 
-fig = plt.figure()
-ax = plt.axes()
-plt.xlabel('Network Size')
-plt.ylabel('Similarity')
-plt.plot(times,similarities, label='Degree Power '+str(power1)+" to "+str(power2))
-plt.legend(loc='lower right')
-plt.show()
+with open(similarity_matrix,'a') as f:
+    for i in range(no_params):
+        for j in range(no_params):
+            p1, p2 = no_params[i], no_params[j]
+            file = "PP-100-"+p1+"-"+p2+".dat"
+            similarity_matrix[i,j] = process_net(p1, p2, file)
+            f.write(str(similarity_matrix[i,j])+" ")
+        f.write('\n')
+    f.close()
