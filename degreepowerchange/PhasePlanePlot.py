@@ -46,8 +46,12 @@ ax = sns.heatmap(RMSEmatrix, cmap="YlGnBu", norm=MidpointNormalize(midpoint=20),
                  cbar_kws={'label': 'RMS error (number of iterations)',
                            'orientation': 'horizontal'})
 
-ax.set_ylabel('Degree power exponent pre-changepoint')
-ax.set_xlabel('Degree power exponent post-changepoint')
+cbar = ax.collections[0].colorbar
+cbar.ax.tick_params(labelsize=12)
+cbar.set_label('RMS error (number of iterations)', fontsize=16)
+ax.set_ylabel('Degree power exponent \n pre-changepoint',fontsize=16, wrap=True)
+ax.set_xlabel('Degree power exponent \n post-changepoint',fontsize=16, wrap=True)
 #plt.title('Detection of changepoint time in degree power models')
 
+plt.tight_layout()
 plt.show()
