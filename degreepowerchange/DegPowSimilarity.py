@@ -1,13 +1,12 @@
 import networkx as nx
 import numpy as np
 import math
-import matplotlib.pyplot as plt
 
 # read file
 
 params = [str(round(x,1)) for x in np.linspace(0.8,2.0,num=13)]
 no_params = 13
-similarity_matrix = np.zeros((noParams, noParams), dtype=float)
+similarity_matrix = np.zeros((no_params, no_params), dtype=float)
 similarity_file = "SimilarityMatrix.txt"
 
 def compute_similarity(p1, p2, net):
@@ -37,10 +36,10 @@ def process_net(p1,p2,file):
     sim = compute_similarity(param1,param2,G)
     return sim
 
-with open(similarity_matrix,'a') as f:
+with open(similarity_file,'a') as f:
     for i in range(no_params):
         for j in range(no_params):
-            p1, p2 = no_params[i], no_params[j]
+            p1, p2 = params[i], params[j]
             file = "PP-100-"+p1+"-"+p2+".dat"
             similarity_matrix[i,j] = process_net(p1, p2, file)
             f.write(str(similarity_matrix[i,j])+" ")
