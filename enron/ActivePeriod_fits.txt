@@ -1,0 +1,6 @@
+NB Active period refers to the time period between timestamps 997747200 to 1024099200 where most of the action happens.
+
+Max likelihood : 2.872221381743279
+0.68 Degree
+0.1 Random
+0.22 TriangleClosureDegree

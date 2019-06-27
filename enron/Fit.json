@@ -3,19 +3,20 @@
     "GraphInputFile": "experiments/enron/enron.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "Directed": false
+    "Directed": false,
+    "NoRecents": 15
   },
   "Action": {
     "FitMixedModel": {
-      "Start": 1008615012,
+      "Start": 997747200,
       "Interval": 1000000,
-      "MaxTime": 1716720597,
+      "MaxTime": 1024099200,
       "Granularity": 100
     }
   },
   "ObjectModel": [
     {
-      "Start": 1008615011,
+      "Start": 997747199,
       "End": 1716720600,
       "Components": [
         {

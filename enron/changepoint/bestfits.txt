@@ -1,9 +1,33 @@
-Max likelihood : 6.624073046945803
-0.45 Degree
-0.14 Random
-0.41 TriangleClosureDegree
-Max likelihood : 8.00847516168506
-0.42 Degree
-0.14 Random
-0.44 TriangleClosureDegree
+NB Active period refers to the time period between timestamps 997747200 to 1024099200 where most of the action happens.
+
+Changepoint tried at 1007251200 where company goes bankrupt
+
+Max likelihood : 2.872957496136624
+0.68 Degree
+0.12 Random
+0.2 TriangleClosure (15)
+Max likelihood : 4.070968371951308
+0.69 Degree
+0.04 Random
+0.27 TriangleClosure (15)
+
+Max likelihood : 2.5877151131911735
+0.67 Degree
+0.13 Random
+0.2 TriangleClosureDegree (15)
+Max likelihood : 3.7057310292639354
+0.67 Degree
+0.05 Random
+0.28 TriangleClosureDegree (15)
+
+Max likelihood : 2.603018167399864
+0.83 Degree
+0.08 Random
+0.09 TriangleClosureInverseDegree (15)
+Max likelihood : 3.4953743246592825
+0.9 Degree
+0.0 Random
+0.1 TriangleClosureInverseDegree (15)
+
+
 

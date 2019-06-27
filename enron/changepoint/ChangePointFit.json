@@ -3,49 +3,53 @@
     "GraphInputFile": "experiments/enron/enron.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "Directed": false
+    "Directed": false,
+    "NoRecents": 15
   },
   "Action": {
     "FitMixedModel": {
-      "Start": 989845260,
-      "Interval": 1000000,
-      "MaxTime": 1716720597,
-      "Granularity": 100
+      "Start": 997747200,
+      "Interval": 10,
+      "MaxTime": 1024099200,
+      "Granularity": 100,
+
     }
   },
   "ObjectModel": [
     {
-      "Start": 989845250,
+      "Start": 997747199,
       "End": 1007251200,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 1.0
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power": 0.8
         },
         {
           "ComponentName": "feta.objectmodels.RandomAttachment",
           "Weight": 1.0
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosureDegree",
+          "ComponentName": "feta.objectmodels.TriangleClosure",
           "Weight":1.0
         }
       ]
     },
     {
       "Start": 1007251200,
-      "End": 1716720600,
+      "End": 1124099200,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreeModelComponent",
-          "Weight": 1.0
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power":0.8
         },
         {
           "ComponentName": "feta.objectmodels.RandomAttachment",
           "Weight": 1.0
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosureDegree",
+          "ComponentName": "feta.objectmodels.TriangleClosure",
           "Weight":1.0
         }
       ]

@@ -1,0 +1,44 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false,
+    "NoRecents": 15
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 1012717628,
+      "Interval": 10,
+      "MaxTime": 1024099200,
+      "Granularity": 100,
+
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1007251200,
+      "End": 1124099200,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power":0.8
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}
