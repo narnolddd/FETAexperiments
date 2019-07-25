@@ -7,12 +7,13 @@ from collections import defaultdict
 
 fig, ax = plt.subplots(nrows=2,ncols=1,figsize=(6,7), sharex=True)
 
-ax[0].xaxis.label.set_fontsize(12)
-ax[0].yaxis.label.set_fontsize(12)
-plt.xlabel('Iteration number corresponding to changepoint')
-ax[0].set_ylabel('RMSE (# iterations)')
+plt.xlabel('Iteration number corresponding to changepoint', fontsize=16)
+plt.xticks(fontsize=12)
+ax[0].tick_params(axis='y', which='major', labelsize=12)
+ax[1].tick_params(axis='y', which='major', labelsize=12)
+ax[0].set_ylabel('RMSE (# iterations)', fontsize=16)
 
-ax[1].set_ylabel('Estimated changepoint time')
+ax[1].set_ylabel('Estimated changepoint time', fontsize=16)
 
 linetype = defaultdict(lambda:'-')
 # linetype["['1.2', '1.0']"]='--'
@@ -90,4 +91,5 @@ for comb in params:
 ax[1].plot(truevals,truevals, linestyle='--', color='black')
 ax[1].legend(loc='upper left')
 ax[0].legend(loc='upper left')
+plt.tight_layout()
 plt.show()

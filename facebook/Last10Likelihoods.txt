@@ -28,10 +28,10 @@ Max likelihood : 1.3495363157847151
 0.33 Random
 0.05 TriangleClosure 5
 
-Max likelihood : 1.367106209954821
-0.61 DegreePower 0.8
-0.33 Random
-0.06 TriangleClosure 15
+            Max likelihood : 1.367106209954821
+            0.61 DegreePower 0.8
+            0.33 Random
+            0.06 TriangleClosure 15
 
 Max likelihood : 1.3586308849437334
 0.5 PFP -0.02

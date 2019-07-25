@@ -1,0 +1,28 @@
+Likelihoods listed as: best model for first period + likelihood for that period, best model for second period and likelihood for that period
+
+Max likelihood : 1.2867015159074704
+0.37 Random
+0.03 TriangleClosure (1)
+0.6 DegreePower 0.8
+Max likelihood : 1.2612314119003771
+0.3 Random
+0.02 TriangleClosure (1)
+0.68 DegreePower 0.8
+
+Max likelihood : 1.382422784913946
+0.37 Random
+0.06 TriangleClosure (5)
+0.57 DegreePower 0.8
+Max likelihood : 1.3215507689621122
+0.3 Random
+0.04 TriangleClosure (5)
+0.66 DegreePower 0.8
+
+Max likelihood : 1.406469506729174
+0.36 Random
+0.08 TriangleClosure (15)
+0.56 DegreePower 0.8
+Max likelihood : 1.3335309318987674
+0.3 Random
+0.05 TriangleClosure (15)
+0.65 DegreePower 0.8

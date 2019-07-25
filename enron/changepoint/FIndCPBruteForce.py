@@ -32,11 +32,13 @@ tB = 1024099200
 
 times = [int(np.round(t)) for t in np.linspace(tA, tB, 21)]
 
-pool = mp.Pool(mp.cpu_count())
-likelihoods = pool.map(likelihood, [T for T in times])
-pool.close()
+print(times)
 
-with open(results,'w') as f:
-    for i in range(21):
-        f.write(str(int(times[i]))+" "+str(likelihoods[i])+"\n")
-    f.close()
+# pool = mp.Pool(mp.cpu_count())
+# likelihoods = pool.map(likelihood, [T for T in times])
+# pool.close()
+#
+# with open(results,'w') as f:
+#     for i in range(21):
+#         f.write(str(int(times[i]))+" "+str(likelihoods[i])+"\n")
+#     f.close()

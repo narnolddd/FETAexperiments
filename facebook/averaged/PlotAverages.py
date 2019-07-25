@@ -5,7 +5,7 @@ import matplotlib as mpl
 import datetime as dt
 from collections import defaultdict
 
-fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(20,10))
+fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(15,5))
 
 x_major_lct = mpl.dates.AutoDateLocator(minticks=2,maxticks=10, interval_multiples=True)
 x_fmt = mpl.dates.AutoDateFormatter(x_major_lct)
@@ -30,6 +30,13 @@ compthickness['BestMix'] = 3
 compthickness['Real'] = 3
 compalpha = 1
 
+compcol={}
+compcol['Real'] = "black"
+compcol['BestMix'] = '#1f77b4'
+compcol['DP'] = '#ff7f0e'
+compcol['Tri'] = '#2ca02c'
+compcol['Rand'] = '#d62728'
+
 experiments = 10
 root = "experiments/facebook/averaged/"
 models = ['Real','BestMix', 'DP', 'Rand', 'Tri']
@@ -45,7 +52,7 @@ def get_dfs(model):
         with open(name,'r') as f:
             rawdata = f.read().splitlines()
             times = [dt.datetime.fromtimestamp(int(l.split()[0])) for l in rawdata]
-            print(times)
+            #print(times)
             matrix = np.array([[int(row.split()[0])]+[float(num) for num in row.split()[1:]] for row in rawdata])
             df = pd.DataFrame(matrix)
             dfs[ex]=df
@@ -67,13 +74,13 @@ for model in models:
     dfs, times = get_dfs(model)
     averages = get_averages(dfs)
 
-    lineobjects[label]=ax[0,0].plot(times, averages['maxdeg'],label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[0,1].plot(times, averages['clustercoeff'],label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[0,2].plot(times, averages['meandegsq'], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[0,3].plot(times, averages['assortativity'], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,0].plot(times, averages['singletons'], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,1].plot(times, averages['doubletons'], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,2].plot(times, averages['triangles'], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    lineobjects[label]=ax[0,0].plot(times, averages['maxdeg'], color= compcol[model], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[0,1].plot(times, averages['clustercoeff'],label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[0,2].plot(times, averages['meandegsq'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[0,3].plot(times, averages['assortativity'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,0].plot(times, averages['singletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,1].plot(times, averages['doubletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,2].plot(times, averages['triangles'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
 
 for row in range(2):
     for col in range(4):

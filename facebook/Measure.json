@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/facebook/Rand.dat",
+    "GraphInputFile": "experiments/facebook/facebook.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -11,7 +11,7 @@
       "Interval":100000,
       "MaxNodes": 1232593783,
       "PrintDegVector": false,
-      "FileName": "experiments/facebook/RandMeasurements.dat"
+      "FileName": "experiments/facebook/RealMeasurements.dat"
     }
   }
 }

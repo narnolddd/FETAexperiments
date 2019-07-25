@@ -6,11 +6,12 @@ from textwrap import wrap
 # set up figure
 fig = plt.figure()
 ax = plt.axes()
+plt.xticks(fontsize=12)
+ax.tick_params(axis='y', which='major', labelsize=12)
 ax.xaxis.label.set_fontsize(12)
 ax.yaxis.label.set_fontsize(12)
-plt.xlabel('Mixture Parameter $\\beta$')
-plt.ylabel('Error (RMSE)')
-plt.title('Recovery performance of mixture parameter')
+plt.xlabel('Mixture Parameter $\\beta$', fontsize=16)
+plt.ylabel('Error (RMSE)', fontsize=16)
 ax.set_ylim([0,0.1])
 
 # set up parameter space

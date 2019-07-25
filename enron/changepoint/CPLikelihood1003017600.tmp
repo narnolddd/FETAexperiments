@@ -1,0 +1,54 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false,
+    "NoRecents": 15
+  },
+  "Action": {
+    "Likelihood": {
+      "Start": 997747200,
+      "Interval": 1000,
+      "MaxTime": 1024099200,
+
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 997747199,
+      "End": 1003017600,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 0.79,
+          "Power": 0.8
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":0.21
+        }
+      ]
+    },
+    {
+      "Start": 1003017600,
+      "End": 1124099200,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 0.71,
+          "Power":0.8
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":0.29
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}
