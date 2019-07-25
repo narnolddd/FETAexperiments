@@ -25,16 +25,18 @@ for ex in range(numExperiments):
             tmp2 = re.sub("NAME","BARank-1000-"+link+"-"+str(beta),tmp)
             tmp2 = re.sub("AAA",str(beta),tmp2)
             tmp2 = re.sub("BBB",str(1-beta),tmp2)
+            tmp3 = re.sub("NUM",link,tmp3)
+
             with open(grow_tmp,'w') as f:
-                f.write(tmp2)
+                f.write(tmp3)
                 f.close()
             os.system("java -jar feta3-1.0.0.jar "+grow_tmp)
             os.system("rm "+grow_tmp)
 
             with open(file_fit,'r') as ffit:
                 fitdata = ffit.read()
+
             tmp3 = re.sub("NAME","BARank-1000-"+link+"-"+str(beta),fitdata)
-            tmp3 = re.sub("NUM",link,tmp3)
             with open(fit_tmp,'w') as f2:
                 f2.write(tmp3)
                 f2.close()
