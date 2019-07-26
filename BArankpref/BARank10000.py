@@ -42,9 +42,14 @@ for ex in range(numExperiments):
             os.system("java -jar feta3-1.0.0.jar "+fit_tmp+" > "+dump)
             os.system("rm "+fit_tmp)
 
+            firstline=0
             with open(dump,'r') as like:
                 fit = like.read().splitlines()
-                betaguess = float(fit[1].strip().split(" ")[0])
+                while True:
+                    if fit[firstline].split()[0]=="Max":
+                        break
+                    firstline+=1
+                betaguess = float(fit[1+firstline].strip().split(" ")[0])
 
             fres = open(re.sub("NUM-results",link+"-results"+str(beta),results), 'a+')
             fres.write(str(beta)+" "+str(betaguess)+"\n")
