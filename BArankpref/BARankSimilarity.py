@@ -19,9 +19,9 @@ for size in ["1000", "10000"]:
     means = []
     sds = []
     for par in params:
-        similarities = []
+        similarity = 0.0
         for ex in range(10):
-            file = "BARank-"+size+"-"+str(ex)+"-"+par+".dat"
+            file = "BARank-"+size+"-3-"+par+".dat"
             G = nx.Graph()
             with open(file,'r') as f:
                 while True:
@@ -31,13 +31,8 @@ for size in ["1000", "10000"]:
                     n1, n2 = line.split()[0], line.split()[1]
                     G.add_edge(n1,n2)
                 f.close()
-            similarities.append(getSimilarity(G))
-        print(similarities)
-        mean, sd = np.mean(similarities), np.std(similarities)
+            similarity = getSimilarity(G)
+        print(similarity)
         with open(result,'a') as r:
-            r.write(par+" "+str(mean)+" "+str()+"\n")
+            r.write(par+" "+str(similarity)+"\n")
             r.close()
-        means.append(mean)
-        sds.append(sd)
-    print(means)
-    print(sds)
