@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/citations/averages/BestMix-9.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1001615559,
+      "Interval":1000000,
+      "MaxNodes": 1015956000,
+      "PrintDegVector": false,
+      "FileName": "experiments/citations/averages/BestMix-9-Measurements.dat"
+    }
+  }
+}

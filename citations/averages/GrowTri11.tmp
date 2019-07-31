@@ -1,0 +1,35 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/citations/averages/Tri11-9.dat",
+    "NoRecents": 11,
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1001615559,
+      "Interval": 10,
+      "MaxNodes": 34343
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1001615559,
+      "End": 1015956000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Clone",
+    "FileName": "experiments/citations/CitationsNewOpModel.feta",
+    "Start": 1001615559
+  }
+}
