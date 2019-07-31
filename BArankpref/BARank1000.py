@@ -40,7 +40,7 @@ for ex in range(numExperiments):
             tmp2 = re.sub("NAME","BARank-1000-"+link+"-"+str(beta),tmp)
             tmp2 = re.sub("AAA",str(beta),tmp2)
             tmp2 = re.sub("BBB",str(1-beta),tmp2)
-            tmp3 = re.sub("NUM",link,tmp3)
+            tmp3 = re.sub("NOLINKS",link,tmp2)
 
             with open(grow_tmp,'w') as f:
                 f.write(tmp3)
