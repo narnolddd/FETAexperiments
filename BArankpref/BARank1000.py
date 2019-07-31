@@ -26,7 +26,7 @@ def getSimilarity(net, param):
     BAprobs = degrees/sum(degrees)
     rankprobs = rankpowers/sum(rankpowers)
     modelprobs = param*BAprobs + (1 - param)*rankprobs
-    BAnum = np.dot(BAprobs,vmodelprobs)
+    BAnum = np.dot(BAprobs,modelprobs)
     BAden = np.sqrt(np.dot(BAprobs, BAprobs)) * np.sqrt(np.dot(modelprobs, modelprobs))
     RPnum = np.dot(rankprobs, modelprobs)
     RPden = np.sqrt(np.dot(rankprobs, rankprobs)) * np.sqrt(np.dot(modelprobs, modelprobs))
