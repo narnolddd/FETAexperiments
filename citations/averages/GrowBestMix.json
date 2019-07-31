@@ -1,0 +1,44 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/citations/averages/BestMix-EXPERIMENT.dat",
+    "NoRecents": 11,
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1001615559,
+      "Interval": 10,
+      "MaxNodes": 34343
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1001615559,
+      "End": 1015956000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 0.24,
+          "Power": 1.1
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.68
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.08
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Clone",
+    "FileName": "experiments/citations/CitationsNewOpModel.feta",
+    "Start": 1001615559
+  }
+}
