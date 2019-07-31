@@ -20,14 +20,17 @@ with open(file_grow,'r') as fgrow:
     growdata = fgrow.read()
     fgrow.close()
 
-def getSimilarity(net):
-    degrees = [net.degree(node) for node in net.nodes()]
-    rankpowers = [np.power(i+1, -0.5) for i in range(len(net.nodes()))]
-    numerator = sum([degrees[j]*rankpowers[j] for j in range(len(net.nodes))])
-    den1 = np.sqrt(sum([rankpowers[j]*rankpowers[j] for j in range(len(rankpowers))]))
-    den2 = np.sqrt(sum([degrees[j]*degrees[j] for j in range(len(degrees))]))
-    denominator = den1*den2
-    return numerator/denominator
+def getSimilarity(net, param):
+    degrees = np.array([net.degree(node) for node in net.nodes()])
+    rankpowers = np.array([np.power(i+1, -0.5) for i in range(len(net.nodes()))])
+    BAprobs = degrees/sum(degrees)
+    rankprobs = rankpowers/sum(rankpowers)
+    modelprobs = param*BAprobs + (1 - param)*rankprobs
+    BAnum = np.dot(BAprobs,vmodelprobs)
+    BAden = np.sqrt(np.dot(BAprobs, BAprobs)) * np.sqrt(np.dot(modelprobs, modelprobs))
+    RPnum = np.dot(rankprobs, modelprobs)
+    RPden = np.sqrt(np.dot(rankprobs, rankprobs)) * np.sqrt(np.dot(modelprobs, modelprobs))
+    return BAnum/BAden, RPnum/RPden
 
 for ex in range(numExperiments):
     for link in nolinks:
@@ -65,10 +68,10 @@ for ex in range(numExperiments):
                     n1, n2 = line.split()[0], line.split()[1]
                     G.add_edge(n1,n2)
                 f.close()
-            similarity = getSimilarity(G)
+            similarity = getSimilarity(G, beta)
 
             with open(similarities,'a+') as sfile:
-                sfile.write(str(beta)+" "+str(similarity)+"\n")
+                sfile.write(str(beta)+" "+str(similarity[0])+" "+str(similarity[1])+"\n")
                 sfile.close()
 
             os.system("rm "+fit_tmp)
