@@ -1,0 +1,44 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/degreepowerchange/NAME.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Likelihood": {
+      "Start": 1,
+      "Interval": 1,
+      "MaxNodes": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1,
+      "End": TTT,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power": 1.2
+        }
+      ]
+    },
+    {
+      "Start": TTT,
+      "End": 15000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Weight": 1.0,
+          "Power": 1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}
