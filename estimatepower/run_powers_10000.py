@@ -12,9 +12,9 @@ with open(root+"like_power.json",'r') as f:
     like = f.read()
     f.close()
 
-growtmp = root+"grow_power.tmp"
-liketmp = root+"like_power.tmp"
-dump = root+"likedump.tmp"
+growtmp = root+"grow_power.tmp2"
+liketmp = root+"like_power.tmp2"
+dump = root+"likedump.tmp2"
 
 params = np.linspace(0.0,2.0,num=21)
 guesses = np.linspace(-0.1,2.1,num=111)
