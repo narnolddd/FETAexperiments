@@ -24,7 +24,7 @@ for p in params:
     graphname = "DP"+pstring+".dat"
     tmp1 = re.sub("NAME", graphname, grow)
     tmp2 = re.sub("AAA", pstring, tmp1)
-    param_file = root+"likelihoods/like-1000-"+pstring+".dat"
+    param_file = root+"likelihoods/like-10000-"+pstring+".dat"
     for _ in range(10):
         with open(growtmp,'w') as f:
             f.write(tmp2)
