@@ -4,11 +4,11 @@ import os
 
 root = "experiments/estimatepower/"
 
-with open(root+"grow_power.json",'r') as f:
+with open(root+"grow_power10000.json",'r') as f:
     grow = f.read()
     f.close()
 
-with open(root+"like_power.json",'r') as f:
+with open(root+"like_power10000.json",'r') as f:
     like = f.read()
     f.close()
 
@@ -21,10 +21,10 @@ guesses = np.linspace(-0.1,2.1,num=111)
 
 for p in params:
     pstring = str(round(p,2))
-    graphname = "DP"+pstring+".dat"
+    graphname = "DP"+pstring+"10000.dat"
     tmp1 = re.sub("NAME", graphname, grow)
     tmp2 = re.sub("AAA", pstring, tmp1)
-    param_file = root+"likelihoods/like-1000-"+pstring+".dat"
+    param_file = root+"likelihoods/like-10000-"+pstring+".dat"
     for _ in range(10):
         with open(growtmp,'w') as f:
             f.write(tmp2)

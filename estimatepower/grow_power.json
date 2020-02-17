@@ -10,7 +10,7 @@
     "Grow": {
       "Start": 1,
       "Interval": 1,
-      "MaxNodes": 10000
+      "MaxNodes": 1000
     }
   },
   "ObjectModel": [
