@@ -2,7 +2,7 @@ import numpy as np
 import re
 import os
 
-params = [str(round(x,2)) for x in np.linspace(0.8,2.0,num=25)]
+params = [str(round(x,1)) for x in np.linspace(0.0,2.0,num=21)]
 experiments = 10
 
 errors = np.array((len(params),len(params)))
@@ -35,6 +35,8 @@ with open(likefile,'r') as g:
 for ex in range(experiments):
     for p1 in params:
         for p2 in params:
+            if float(p1)>=0.8 and float(p2)>=0.8:
+                continue
             print(str(ex)+" "+p1+" "+p2)
             tmp1 = re.sub("NAME", "PP-100-"+p1+"-"+p2,growdata)
             tmp2 = re.sub("PARAM1",p1,tmp1)

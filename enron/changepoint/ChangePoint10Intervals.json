@@ -4,7 +4,7 @@
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
     "Directed": false,
-    "NoRecents": 15
+    "NoRecents": NNN
   },
   "Action": {
     "FitMixedModel": {
