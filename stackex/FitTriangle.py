@@ -2,7 +2,7 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 import re
-import pandas as pd
+#import pandas as pd
 
 ## File for fitting the NoRecents parameter for the triangle model in SX dataset
 
