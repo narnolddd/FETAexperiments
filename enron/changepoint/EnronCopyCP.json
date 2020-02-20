@@ -3,16 +3,15 @@
     "GraphInputFile": "experiments/enron/enron.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/enron/graphfiles/CP_Best.dat",
     "Directed": false,
-    "NoRecents": 13
+    "NoRecents":13
   },
   "Action": {
-    "FitMixedModel": {
+    "Grow": {
       "Start": 997747200,
-      "Interval": 10,
-      "MaxTime": 1024099200,
-      "Granularity": 100,
-
+      "Interval": 1000,
+      "MaxTime": 1024099200
     }
   },
   "ObjectModel": [
@@ -209,7 +208,8 @@
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.Email",
-    "NoRecipients": 3
+    "Name": "feta.operations.Clone",
+    "Start": 997745068,
+    "FileName": "experiments/enron/enron.feta"
   }
 }

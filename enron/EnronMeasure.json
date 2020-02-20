@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/enron/graphfiles/NoCP_Best.dat",
+    "GraphInputFile": "experiments/enron/graphfiles/CP_Best.dat",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -11,7 +11,7 @@
       "Interval":1000000,
       "MaxTime": 1024099200,
       "PrintDegVector": false,
-      "FileName": "experiments/enron/NoCP_Best_Measurements_NUM.dat"
+      "FileName": "experiments/enron/changepoint/CP_Best_Measurements_NUM.dat"
     }
   }
 }
