@@ -1,0 +1,43 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "NoRecents": 4,
+    "Directed": false
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 1001615559,
+      "Interval": 100000,
+      "MaxTime": 1015956000,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1001548800,
+      "End": 1015957000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.3,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}
