@@ -29,6 +29,6 @@
   "OperationModel":
   {
     "Name": "feta.operations.PreferentialAttachment",
-    "InitialDegree": 3
+    "InitialDegree":1
   }
 }
