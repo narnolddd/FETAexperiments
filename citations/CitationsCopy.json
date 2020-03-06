@@ -9,7 +9,7 @@
   },
   "Action": {
     "Grow": {
-      "Start": 1001615559,
+      "Start": 820800000,
       "Interval": 10,
       "MaxNodes": 34343
     }
@@ -21,16 +21,16 @@
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
-          "Power" : 1.1,
+          "Power" : 1.2,
           "Weight": 0.24
         },
         {
           "ComponentName": "feta.objectmodels.RandomAttachment",
-          "Weight": 0.08
+          "Weight": 0.11
         },
         {
           "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.68
+          "Weight": 0.65
         }
       ]
     }
@@ -39,6 +39,6 @@
   {
     "Name": "feta.operations.Clone",
     "FileName": "experiments/citations/CitationsNewOpModel.feta",
-    "Start": 1001615559
+    "Start": 820800000
   }
 }
