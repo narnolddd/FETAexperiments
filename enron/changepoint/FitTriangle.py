@@ -7,12 +7,12 @@ import numpy as np
 ## File for fitting the NoRecents parameter for the triangle model in Enron dataset
 
 trials = range(1,21)
-powers = np.linspace(0.8,1.5,8)
+powers = np.linspace(0.3,0.7,5)
 
 lf = "experiments/enron/Fit.json"
 lt = "experiments/enron/Fit.tmp"
 dump = "experiments/enron/likedump.tmp"
-results = "experiments/enron/trianglefits.dat"
+results = "experiments/enron/trianglefits2.dat"
 
 with open(lf,'r') as f:
     likedata = f.read()

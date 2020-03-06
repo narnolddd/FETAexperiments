@@ -3,12 +3,12 @@
     "GraphInputFile": "data/cit-HepPh-new.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "NoRecents": 4,
+    "NoRecents": 20,
     "Directed": false
   },
   "Action": {
     "FitMixedModel": {
-      "Start": 1001615559,
+      "Start": 820800000,
       "Interval": 100000,
       "MaxTime": 1015956000,
       "Granularity": 100
@@ -16,12 +16,12 @@
   },
   "ObjectModel": [
     {
-      "Start": 1001548800,
+      "Start": 820800000,
       "End": 1015957000,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
-          "Power": 1.3,
+          "Power": 1.5,
           "Weight": 1.0
         },
         {

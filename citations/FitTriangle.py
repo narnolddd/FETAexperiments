@@ -12,7 +12,7 @@ powers = np.linspace(0.8,1.5,8)
 lf = "experiments/citations/Fit.json"
 lt = "experiments/citations/Fit.tmp"
 dump = "experiments/citations/likedump.tmp"
-results = "experiments/citations/trianglefits.dat"
+results = "experiments/citations/trianglefitsall.dat"
 
 with open(lf,'r') as f:
     likedata = f.read()

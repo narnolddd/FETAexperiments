@@ -20,7 +20,8 @@
       "End": 1716720600,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreeModelComponent",
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 0.7,
           "Weight": 1.0
         },
         {
