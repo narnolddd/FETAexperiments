@@ -7,13 +7,13 @@ import numpy as np
 
 ## File for fitting the NoRecents parameter for the triangle model in SX dataset
 
-trials = range(1,21)
-powers = np.linspace(0.3,0.7,5)
+trials = range(10,21)
+powers = np.linspace(0.5,1.0,6)
 
 lf = "experiments/stackex/SX_Fit.json"
 lt = "experiments/stackex/SX_Fit.tmp"
 dump = "experiments/stackex/likedump.tmp"
-results = "experiments/stackex/trianglefits2.dat"
+results = "experiments/stackex/trianglefits3.dat"
 
 with open(lf,'r') as f:
     likedata = f.read()
