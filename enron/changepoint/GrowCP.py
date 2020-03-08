@@ -4,9 +4,9 @@ import os
 import re
 
 root = "experiments/enron/"
-tmpm_file = root+"EnronMeasure.tmp"
+tmpm_file = root+"EnronMeasureCP.tmp"
 
-with open(root+"EnronMeasure.json",'r') as f:
+with open(root+"EnronMeasureCP.json",'r') as f:
     likedata = f.read()
     f.close()
 
