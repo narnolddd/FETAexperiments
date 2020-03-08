@@ -10,7 +10,7 @@
       "Start": 820800000,
       "Interval": 1000000,
       "MaxNodes": 34343,
-      "FileName": "experiments/citations/changepoint/NoCP_Best_Measurements_NUM.dat"
+      "FileName": "experiments/citations/NoCP_Best_Measurements_NUM.dat"
     }
   }
 }
