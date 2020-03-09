@@ -1,0 +1,215 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/citations/changepoint/CP_Best.dat",
+    "NoRecents": 11,
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 820800000,
+      "Interval": 10,
+      "MaxNodes": 34343
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 820800000,
+      "End": 840315600,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.33
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.52
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.15
+        }
+      ]
+    },
+    {
+      "Start": 840315600,
+      "End": 859831200,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.31
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.57
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.12
+        }
+      ]
+    },
+    {
+      "Start": 859831200,
+      "End": 879346800,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.28
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.61
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.11
+        }
+      ]
+    },
+    {
+      "Start": 879346800,
+      "End": 898862400,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.24
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.6
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.16
+        }
+      ]
+    },
+    {
+      "Start": 898862400,
+      "End": 918378000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.23
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.63
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.14
+        }
+      ]
+    },
+    {
+      "Start": 918378000,
+      "End": 937893600,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.23
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.66
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.11
+        }
+      ]
+    },
+    {
+      "Start": 937893600,
+      "End": 957409200,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.25
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.66
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.09
+        }
+      ]
+    },
+    {
+      "Start": 957409200,
+      "End": 976924800,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.22
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.67
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.11
+        }
+      ]
+    },
+    {
+      "Start": 976924800,
+      "End": 996440400,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.21
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.69
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.1
+        }
+      ]
+    },
+    {
+      "Start": 996440400,
+      "End": 1015957000,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 1.2,
+          "Weight": 0.22
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight": 0.68
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.1
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Clone",
+    "FileName": "experiments/citations/CitationsNewOpModel.feta",
+    "Start": 820800000
+  }
+}

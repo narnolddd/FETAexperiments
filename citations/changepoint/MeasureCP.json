@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputFile": "experiments/citations/changepoint/CP_Best.dat",
     "GraphInputType": "NNT",
     "OutputLineSeparator": " "
   },
@@ -9,7 +9,7 @@
       "Start": 820800000,
       "Interval": 1000000,
       "MaxNodes": 34343,
-      "FileName": "experiments/citations/Real_Measurements.dat"
+      "FileName": "experiments/citations/changepoint/CP_Measurements_NUM.dat"
     }
   }
 }
