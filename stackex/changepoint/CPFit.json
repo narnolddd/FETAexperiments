@@ -1,0 +1,214 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false,
+    "NoRecents": 19
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 1271680475,
+      "Interval": 10000,
+      "MaxTime": 1457261724,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1261680475,
+      "End": 1290238600,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1290238600,
+      "End": 1308796725,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1308796725,
+      "End": 1327354850,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1327354850,
+      "End": 1345912975,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1345912975,
+      "End": 1364471100,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1364471100,
+      "End": 1383029225,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1383029225,
+      "End": 1401587350,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1401587350,
+      "End": 1420145475,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1420145475,
+      "End": 1438703600,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    },
+    {
+      "Start": 1438703600,
+      "End": 1557261725,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}

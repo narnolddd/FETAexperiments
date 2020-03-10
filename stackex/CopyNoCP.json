@@ -1,0 +1,44 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/stackex/NoCP_Best.dat",
+    "Directed": false,
+    "NoRecents": 19
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1271680475,
+      "Interval": 1000,
+      "MaxTime": 1457261724
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1261680475,
+      "End": 1458261824,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power" : 0.8,
+          "Weight": 0.46
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 0.12
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":0.42
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Clone",
+    "FileName": "experiments/stackex/sx.feta",
+    "Start": 1271680475
+  }
+}
