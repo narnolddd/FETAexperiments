@@ -1,0 +1,15 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/citations/changepoint/CP_Best.dat",
+    "GraphInputType": "NNT",
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 820800000,
+      "Interval": 1000000,
+      "MaxNodes": 34343,
+      "FileName": "experiments/citations/changepoint/CP_Measurements_9.dat"
+    }
+  }
+}
