@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/NoCP_Best.dat",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1271680475,
+      "Interval":1000000,
+      "MaxTime": 1457261724,
+      "PrintDegVector": false,
+      "FileName": "experiments/stackex/changepoint/NoCP_Measurements_9.dat"
+    }
+  }
+}

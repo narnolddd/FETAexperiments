@@ -3,10 +3,10 @@ warnings.filterwarnings("ignore")
 import os
 import re
 
-root = "experiments/stackex/changepoint"
+root = "experiments/stackex/changepoint/"
 tmpm_file = root+"MeasureCP.tmp"
 
-with open(root+"MeasureNoCP.json",'r') as f:
+with open(root+"MeasureCP.json",'r') as f:
     likedata = f.read()
     f.close()
 
