@@ -16,7 +16,7 @@ growtmp = root+"grow_power.tmp2"
 liketmp = root+"like_power.tmp2"
 dump = root+"likedump.tmp2"
 
-params = np.linspace(0.0,2.0,num=21)
+params = np.linspace(2.0,2.0,num=1)
 guesses = np.linspace(-0.1,2.1,num=111)
 
 for p in params:
@@ -24,7 +24,7 @@ for p in params:
     graphname = "DP"+pstring+"10000.dat"
     tmp1 = re.sub("NAME", graphname, grow)
     tmp2 = re.sub("AAA", pstring, tmp1)
-    param_file = root+"likelihoods/like-10000-1-"+pstring+".dat"
+    param_file = root+"likelihoods/like-10000-3-test"+pstring+".dat"
     for _ in range(10):
         with open(growtmp,'w') as f:
             f.write(tmp2)

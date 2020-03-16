@@ -3,7 +3,7 @@
     "GraphInputFile": "seed_graphs/clique-5.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/estimatepower/graphfiles/NAME",
+    "GraphOutputFile": "experiments/estimatepower/graphfiles/DP2.010000.dat",
     "Directed": false
   },
   "Action": {
@@ -21,7 +21,7 @@
         {
           "ComponentName": "feta.objectmodels.DegreePower",
           "Weight": 1.0,
-          "Power": AAA
+          "Power": 2.0
         }
       ]
     }

@@ -1,13 +1,12 @@
 {
   "Data": {
-    "GraphInputFile": "seed_graphs/clique-5.dat",
+    "GraphInputFile": "experiments/estimatepower/graphfiles/DP2.010000.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/estimatepower/graphfiles/NAME",
     "Directed": false
   },
   "Action": {
-    "Grow": {
+    "Likelihood": {
       "Start": 1,
       "Interval": 1,
       "MaxNodes": 10000
@@ -16,19 +15,19 @@
   "ObjectModel": [
     {
       "Start": 1,
-      "End": 10000,
+      "End": 100000,
       "Components": [
         {
           "ComponentName": "feta.objectmodels.DegreePower",
           "Weight": 1.0,
-          "Power": AAA
+          "Power": 1.7
         }
       ]
     }
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.PreferentialAttachment",
-    "InitialDegree":3
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
   }
 }
