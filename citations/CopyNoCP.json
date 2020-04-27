@@ -1,0 +1,43 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/citations/graphfiles/CIT_NUM.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 820800000,
+      "Interval": 10,
+      "MaxNodes": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 810800000,
+      "End": 1015956000,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.59
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.05
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Depth": 1,
+          "Weight": 0.36
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "Clone",
+    "FileName": "experiments/citations/CitationsOpModel.feta",
+    "Start": 820800000
+  }
+}

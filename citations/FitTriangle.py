@@ -9,7 +9,7 @@ import numpy as np
 trials = range(1,21)
 powers = np.linspace(0.8,1.5,8)
 
-lf = "experiments/citations/Fit.json"
+lf = "experiments/citations/FitNoCP.json"
 lt = "experiments/citations/Fit.tmp"
 dump = "experiments/citations/likedump.tmp"
 results = "experiments/citations/trianglefitsall.dat"

@@ -10,11 +10,11 @@ with open(root+"EnronMeasureNoCP.json",'r') as f:
     likedata = f.read()
     f.close()
 
-for i in range(10):
+for i in range(1):
     os.system("java -jar feta3-1.0.0.jar "+root+"EnronCopy.json")
     tmp = re.sub("NUM",str(i),likedata)
     with open(tmpm_file,'w') as f:
         f.write(tmp)
         f.close()
-    os.system("java -jar feta3-1.0.0.jar "+tmpm_file)
+    #os.system("java -jar feta3-1.0.0.jar "+tmpm_file)
 

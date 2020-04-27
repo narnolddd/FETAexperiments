@@ -1,0 +1,43 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/graphfiles/NoCP_Best_reversed.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false,
+    "NoRecents": 13
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 997747200,
+      "Interval": 1000000,
+      "MaxTime": 1024099200,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 997747199,
+      "End": 1716720600,
+      "Components": [
+        {
+          "ComponentName": "feta.objectmodels.DegreePower",
+          "Power": 0.8,
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.RandomAttachment",
+          "Weight": 1.0
+        },
+        {
+          "ComponentName": "feta.objectmodels.TriangleClosure",
+          "Weight":1.0
+        }
+      ]
+    }
+  ],
+  "OperationModel":
+  {
+    "Name": "feta.operations.Email",
+    "NoRecipients": 3
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
+    "GraphInputType": "NNT",
+    "Directed": false,
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1271680475,
+      "Interval":1000000,
+      "MaxTime": 1457261724,
+      "PrintDegVector": false,
+      "FileName": "experiments/stackex/changepoint/Real_Measurements.dat"
+    }
+  }
+}

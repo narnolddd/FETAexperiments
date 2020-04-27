@@ -9,7 +9,7 @@ import numpy as np
 trials = range(1,21)
 powers = np.linspace(0.3,0.7,5)
 
-lf = "experiments/enron/Fit.json"
+lf = "experiments/enron/FitNoCP.json"
 lt = "experiments/enron/Fit.tmp"
 dump = "experiments/enron/likedump.tmp"
 results = "experiments/enron/trianglefits2.dat"

@@ -11,7 +11,7 @@ with open(root+"CitationsMeasure.json",'r') as f:
     f.close()
 
 for i in range(10):
-    os.system("java -jar feta3-1.0.0.jar "+root+"CitationsCopy.json")
+    os.system("java -jar feta3-1.0.0.jar "+root+"CopyNoCP.json")
     tmp = re.sub("NUM",str(i),likedata)
     with open(tmpm_file,'w') as f:
         f.write(tmp)

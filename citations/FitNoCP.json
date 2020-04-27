@@ -1,0 +1,34 @@
+{
+  "Data": {
+    "GraphInputFile": "data/cit-HepPh-new.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 820800000,
+      "Interval": 100000,
+      "MaxTime": 1015956000,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 820800000,
+      "End": 1015957000,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Depth": 1
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        }
+      ]
+    }
+  ]
+}
