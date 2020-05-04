@@ -3,14 +3,14 @@
     "GraphInputFile": "data/cit-HepPh-new.txt",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/citations/graphfiles/CIT_NUM.dat",
+    "GraphOutputFile": "experiments/citations/graphfiles/CIT.dat",
     "Directed": false
   },
   "Action": {
     "Grow": {
       "Start": 820800000,
       "Interval": 10,
-      "MaxNodes": 10000
+      "MaxNodes": 34343
     }
   },
   "ObjectModel": [
