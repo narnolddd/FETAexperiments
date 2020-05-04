@@ -1,0 +1,4 @@
+Max c0 : 2.782581839779441 max like 345555.2494722408
+0.83 Degree
+0.17 Random
+0.0 TriangleClosure 1

@@ -20,16 +20,16 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.59
+          "Weight": 0.55
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.05
+          "Weight": 0.04
         },
         {
           "ComponentName": "TriangleClosure",
           "Depth": 1,
-          "Weight": 0.36
+          "Weight": 0.41
         }
       ]
     }
