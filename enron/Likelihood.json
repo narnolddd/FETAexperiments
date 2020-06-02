@@ -6,11 +6,10 @@
     "Directed": false
   },
   "Action": {
-    "FitMixedModel": {
+    "Likelihood": {
       "Start": 997747200,
       "Interval": 1000000,
       "MaxTime": 1024099200,
-      "Granularity": 100
     }
   },
   "ObjectModel": [
@@ -19,7 +18,8 @@
       "End": 1716720600,
       "Components": [
         {
-          "ComponentName": "DegreeModelComponent"
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 1.0
         }
       ]
     }
