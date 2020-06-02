@@ -9,6 +9,8 @@
       "Start": 820800000,
       "Interval": 1000000,
       "MaxNodes": 34343,
+      "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
+      "PrintHeader": true,
       "FileName": "experiments/citations/changepoint/CP_Measurements_NUM.dat"
     }
   }
