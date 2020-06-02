@@ -209,7 +209,7 @@
   "OperationModel":
   {
     "Name": "Clone",
-    "FileName": "experiments/citations/CitationsNewOpModel.feta",
+    "FileName": "experiments/citations/CitationsOpModel.feta",
     "Start": 820800000
   }
 }
