@@ -1,0 +1,16 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/gab/gab_nnt_nodup.dat",
+    "GraphInputType": "NNT",
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1470836137,
+      "Interval": 604800,
+      "MaxTime": 1525368859,
+      "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
+      "FileName": "experiments/gab/first10000.dat"
+    }
+  }
+}
