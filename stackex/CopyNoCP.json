@@ -20,24 +20,23 @@
       "End": 1458261824,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Power" : 0.8,
-          "Weight": 0.46
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.8
         },
         {
-          "ComponentName": "feta.objectmodels.RandomAttachment",
-          "Weight": 0.12
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.1
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.42
+          "ComponentName": "TriangleClosure2",
+          "Weight":0.1
         }
       ]
     }
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.Clone",
+    "Name": "Clone",
     "FileName": "experiments/stackex/sx.feta",
     "Start": 1271680475
   }

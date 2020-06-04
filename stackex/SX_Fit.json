@@ -10,7 +10,7 @@
       "Start": 1271680475,
       "Interval": 10000,
       "MaxTime": 1457261724,
-      "Granularity": 100
+      "Granularity": 10
     }
   },
   "ObjectModel": [
@@ -25,8 +25,7 @@
           "ComponentName": "RandomAttachment",
         },
         {
-          "ComponentName": "TriangleClosure",
-          "Depth":1
+          "ComponentName": "TriangleClosure2"
         }
       ]
     }
