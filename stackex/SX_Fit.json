@@ -10,7 +10,7 @@
       "Start": 1271680475,
       "Interval": 10000,
       "MaxTime": 1457261724,
-      "Granularity": 10
+      "Granularity": 100
     }
   },
   "ObjectModel": [

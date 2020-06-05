@@ -4,8 +4,7 @@
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
     "GraphOutputFile": "experiments/stackex/NoCP_Best.dat",
-    "Directed": false,
-    "NoRecents": 19
+    "Directed": false
   },
   "Action": {
     "Grow": {
@@ -21,15 +20,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.8
+          "Weight": 0.78
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.1
+          "Weight": 0.13
         },
         {
           "ComponentName": "TriangleClosure2",
-          "Weight":0.1
+          "Weight":0.09
         }
       ]
     }

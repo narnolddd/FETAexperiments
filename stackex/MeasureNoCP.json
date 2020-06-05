@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/stackex/NoCP_Best.dat",
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
     "GraphInputType": "NNT",
     "Directed": false,
     "OutputLineSeparator": " "
@@ -13,7 +13,7 @@
       "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
       "PrintHeader": true,
       "PrintDegVector": false,
-      "FileName": "experiments/stackex/changepoint/NoCP_Measurements_NUM.dat"
+      "FileName": "experiments/stackex/changepoint/Real_Measurements.dat"
     }
   }
 }
