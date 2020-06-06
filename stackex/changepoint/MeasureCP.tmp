@@ -10,8 +10,10 @@
       "Start": 1271680475,
       "Interval":1000000,
       "MaxTime": 1457261724,
+      "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
+      "PrintHeader": true,
       "PrintDegVector": false,
-      "FileName": "experiments/stackex/changepoint/CP_Measurements_9.dat"
+      "FileName": "experiments/stackex/changepoint/CP_Measurements_8.dat"
     }
   }
 }
