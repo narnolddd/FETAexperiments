@@ -13,7 +13,7 @@
       "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
       "PrintHeader": true,
       "PrintDegVector": false,
-      "FileName": "experiments/facebook/changepoint/CP_3_Measurements.dat"
+      "FileName": "experiments/facebook/changepoint/CP_9_Measurements.dat"
     }
   }
 }
