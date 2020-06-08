@@ -7,9 +7,11 @@
   },
   "Action": {
     "Measure": {
-      "Start": 1229918502,
+      "Start": 1165073426,
       "Interval":100000,
       "MaxNodes": 1232593783,
+      "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
+      "PrintHeader": true,
       "PrintDegVector": false,
       "FileName": "experiments/facebook/RealMeasurements.dat"
     }

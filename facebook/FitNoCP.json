@@ -1,0 +1,33 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/facebook.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false,
+  },
+  "Action": {
+    "FitMixedModel": {
+      "Start": 1165073426,
+      "Interval": 10000,
+      "MaxTime": 1232593783,
+      "Granularity": 100
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1165073426,
+      "End": 1232593784,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure2"
+        }
+      ]
+    }
+  ]
+}
