@@ -24,11 +24,11 @@
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.14
+          "Weight": 0.15
         },
         {
           "ComponentName": "TriangleClosure2",
-          "Weight": 0.38
+          "Weight": 0.37
         }
       ]
     },
