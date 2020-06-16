@@ -13,7 +13,7 @@
       "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
       "PrintHeader": true,
       "PrintDegVector": false,
-      "FileName": "experiments/stackex/changepoint/NoCP_Measurements_8.dat"
+      "FileName": "experiments/stackex/changepoint/NoCP_Measurements_0.dat"
     }
   }
 }
