@@ -1,0 +1,16 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputType": "NNT",
+    "OutputLineSeparator": " "
+  },
+  "Action": {
+    "Measure": {
+      "Start": 997745068,
+      "Interval":1000000,
+      "MaxTime": 1024099200,
+      "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
+      "FileName": "experiments/enron/changepoint/RealMeasurements.dat"
+    }
+  }
+}

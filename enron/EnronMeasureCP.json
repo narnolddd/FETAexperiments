@@ -1,8 +1,7 @@
 {
   "Data": {
     "GraphInputFile": "experiments/enron/graphfiles/CP_Best.dat",
-    "GraphInputType": "NNT",
-    "Directed": false,
+    "GraphInputType": "NNT"
     "OutputLineSeparator": " "
   },
   "Action": {
@@ -10,7 +9,7 @@
       "Start": 997745068,
       "Interval":1000000,
       "MaxTime": 1024099200,
-      "PrintDegVector": false,
+      "Statistics": ["NoNodes", "NoLinks", "AverageDegree", "MaxDegree","Singletons","MeanSquaredDegree", "Assortativity", "Clustering", "TriangleCount"],
       "FileName": "experiments/enron/changepoint/CP_Best_Measurements_NUM.dat"
     }
   }

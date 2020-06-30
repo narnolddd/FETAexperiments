@@ -20,13 +20,13 @@
       "End": 1000382400,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.79,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.94
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.21
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.06
+
         }
       ]
     },
@@ -35,13 +35,13 @@
       "End": 1003017600,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.8,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.86
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.2
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.14
+
         }
       ]
     },
@@ -50,13 +50,13 @@
       "End": 1005652800,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.79,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.91
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.21
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.09
+
         }
       ]
     },
@@ -65,13 +65,13 @@
       "End": 1008288000,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.78,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.96
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.22
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.04
+
         }
       ]
     },
@@ -80,13 +80,13 @@
       "End": 1010923200,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.76,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.96
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.24
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.04
+
         }
       ]
     },
@@ -95,13 +95,13 @@
       "End": 1013558400,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.67,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.99
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.33
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.01
+
         }
       ]
     },
@@ -110,13 +110,13 @@
       "End": 1016193600,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.71,
-          "Power": 0.8
-        }
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.97
+        },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight":0.29
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.03
+
         }
       ]
     },
@@ -125,13 +125,13 @@
       "End": 1018828800,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.78,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.97
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.22
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.03
+
         }
       ]
     },
@@ -140,13 +140,17 @@
       "End": 1021464000,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.76,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.97
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.24
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.01
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.02
+
         }
       ]
     },
@@ -155,20 +159,20 @@
       "End": 1124099200,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
-          "Weight": 0.64,
-          "Power": 0.8
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.73
         },
         {
-          "ComponentName": "feta.objectmodels.TriangleClosure",
-          "Weight": 0.36
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.27
+
         }
       ]
-    },
+    }
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.Clone",
+    "Name": "Clone",
     "Start": 997745068,
     "FileName": "experiments/enron/enron.feta"
   }

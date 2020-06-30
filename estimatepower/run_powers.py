@@ -1,8 +1,10 @@
 import numpy as np
 import re
 import os
+import sys
 
 root = "experiments/estimatepower/"
+links = str(sys.argv[1])
 
 with open(root+"grow_power.json",'r') as f:
     grow = f.read()
@@ -20,14 +22,16 @@ params = np.linspace(0.0,2.0,num=21)
 guesses = np.linspace(-0.1,2.1,num=111)
 
 for p in params:
+    print(p)
     pstring = str(round(p,2))
     graphname = "DP"+pstring+".dat"
     tmp1 = re.sub("NAME", graphname, grow)
     tmp2 = re.sub("AAA", pstring, tmp1)
-    param_file = root+"likelihoods/like-1000-1-"+pstring+".dat"
+    tmp3 = re.sub("LINKS", links, tmp2)
+    param_file = root+"likelihoods/like-1000-"+links+"-"+pstring+".dat"
     for _ in range(10):
         with open(growtmp,'w') as f:
-            f.write(tmp2)
+            f.write(tmp3)
             f.close()
         os.system("java -jar feta3-1.0.0.jar "+growtmp)
         tmp3 = re.sub("NAME", graphname, like)
@@ -40,7 +44,7 @@ for p in params:
                 f.close()
             os.system("java -jar feta3-1.0.0.jar "+liketmp+" > "+dump)
             with open(dump,'r') as f:
-                likelihood = float(f.read().strip())
+                likelihood = float(f.read().strip().split()[1])
                 f.close()
             if likelihood>max_likelihood:
                 max_likelihood=likelihood

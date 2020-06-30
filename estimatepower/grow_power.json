@@ -19,7 +19,7 @@
       "End": 10000,
       "Components": [
         {
-          "ComponentName": "feta.objectmodels.DegreePower",
+          "ComponentName": "DegreePower",
           "Weight": 1.0,
           "Power": AAA
         }
@@ -28,7 +28,7 @@
   ],
   "OperationModel":
   {
-    "Name": "feta.operations.PreferentialAttachment",
-    "InitialDegree": 1
+    "Name": "PreferentialAttachment",
+    "InitialDegree": LINKS
   }
 }
