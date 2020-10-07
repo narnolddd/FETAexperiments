@@ -3,8 +3,7 @@
     "GraphInputFile": "experiments/enron/enron.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "Directed": false,
-    "NoRecents": 13
+    "Directed": false
   },
   "Action": {
     "FitMixedModel": {

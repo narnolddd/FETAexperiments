@@ -34,13 +34,13 @@ for p in params:
             f.write(tmp3)
             f.close()
         os.system("java -jar feta3-1.0.0.jar "+growtmp)
-        tmp3 = re.sub("NAME", graphname, like)
+        tmp4 = re.sub("NAME", graphname, like)
         max_likelihood = 0.0
         max_param = 0
         for g in guesses:
-            tmp4 = re.sub("BBB", str(g), tmp3)
+            tmp5 = re.sub("BBB", str(g), tmp4)
             with open(liketmp,'w') as f:
-                f.write(tmp4)
+                f.write(tmp5)
                 f.close()
             os.system("java -jar feta3-1.0.0.jar "+liketmp+" > "+dump)
             with open(dump,'r') as f:

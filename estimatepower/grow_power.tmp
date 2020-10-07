@@ -1,28 +1,34 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/estimatepower/graphfiles/DP0.0.dat",
+    "GraphInputFile": "seed_graphs/clique-5.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/estimatepower/graphfiles/DP0.4.dat",
     "Directed": false
   },
   "Action": {
-    "Likelihood": {
+    "Grow": {
       "Start": 1,
       "Interval": 1,
-      "MaxNodes": 10000
+      "MaxNodes": 1000
     }
   },
   "ObjectModel": [
     {
       "Start": 1,
-      "End": 100000,
+      "End": 10000,
       "Components": [
         {
           "ComponentName": "DegreePower",
           "Weight": 1.0,
-          "Power": BBB
+          "Power": 0.4
         }
       ]
     }
-  ]
+  ],
+  "OperationModel":
+  {
+    "Name": "PreferentialAttachment",
+    "InitialDegree": 3
+  }
 }
