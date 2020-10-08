@@ -9,7 +9,7 @@
   "Action": {
     "Grow": {
       "Start": 1271680475,
-      "Interval": 1000,
+      "Interval": 10000,
       "MaxTime": 1457261724
     }
   },

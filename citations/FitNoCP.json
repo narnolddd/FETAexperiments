@@ -22,8 +22,7 @@
           "ComponentName": "DegreeModelComponent"
         },
         {
-          "ComponentName": "TriangleClosure",
-          "Depth": 1
+          "ComponentName": "TriangleClosure"
         },
         {
           "ComponentName": "RandomAttachment"
