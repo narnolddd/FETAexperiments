@@ -2,6 +2,8 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 import re
+sys.path.insert(1, '/home/narnoldddd/CODE/FETA3')
+from feta import *
 
 root = "experiments/facebook/"
 tmpm_file = root+"MeasureNoCP.tmp"

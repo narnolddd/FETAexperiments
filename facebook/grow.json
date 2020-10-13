@@ -1,0 +1,41 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/facebook.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/facebook/averaged/GRAPH.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1165073426,
+      "MaxTime": 1232593783,
+      "Interval": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1165073426,
+      "End": 1232594783,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.36
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.22
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.42
+        }
+      ]
+    }
+  ],
+  "OperationModel": {
+    "Name": "Clone",
+    "Start": 1165073426,
+    "FileName": "experiments/facebook/OpModel.feta"
+  }
+}

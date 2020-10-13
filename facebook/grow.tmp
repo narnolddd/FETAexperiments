@@ -1,0 +1,131 @@
+{
+    "Data": {
+        "GraphInputFile": "experiments/facebook/facebook.dat",
+        "GraphInputType": "NNT",
+        "GraphOutputType": "NNT",
+        "GraphOutputFile": "experiments/facebook/averaged/GRAPH.dat",
+        "Directed": false
+    },
+    "Action": {
+        "Grow": {
+            "StartTime": 1165073426,
+            "MaxTime": 1232593783,
+            "Interval": 10000
+        }
+    },
+    "ObjectModel": [
+        {
+            "Start": 1165073426,
+            "End": 1176326819,
+            "Components": [
+                {
+                    "ComponentName": "DegreeModelComponent",
+                    "Weight": 0.47
+                },
+                {
+                    "ComponentName": "RandomAttachment",
+                    "Weight": 0.15
+                },
+                {
+                    "ComponentName": "TriangleClosure2",
+                    "Weight": 0.38
+                }
+            ]
+        },
+        {
+            "Start": 1176326819,
+            "End": 1187580212,
+            "Components": [
+                {
+                    "ComponentName": "DegreeModelComponent",
+                    "Weight": 0.42
+                },
+                {
+                    "ComponentName": "RandomAttachment",
+                    "Weight": 0.16
+                },
+                {
+                    "ComponentName": "TriangleClosure2",
+                    "Weight": 0.42
+                }
+            ]
+        },
+        {
+            "Start": 1187580212,
+            "End": 1198833604,
+            "Components": [
+                {
+                    "ComponentName": "DegreeModelComponent",
+                    "Weight": 0.42
+                },
+                {
+                    "ComponentName": "RandomAttachment",
+                    "Weight": 0.14
+                },
+                {
+                    "ComponentName": "TriangleClosure2",
+                    "Weight": 0.44
+                }
+            ]
+        },
+        {
+            "Start": 1198833604,
+            "End": 1210086997,
+            "Components": [
+                {
+                    "ComponentName": "DegreeModelComponent",
+                    "Weight": 0.43
+                },
+                {
+                    "ComponentName": "RandomAttachment",
+                    "Weight": 0.11
+                },
+                {
+                    "ComponentName": "TriangleClosure2",
+                    "Weight": 0.46
+                }
+            ]
+        },
+        {
+            "Start": 1210086997,
+            "End": 1221340390,
+            "Components": [
+                {
+                    "ComponentName": "DegreeModelComponent",
+                    "Weight": 0.35
+                },
+                {
+                    "ComponentName": "RandomAttachment",
+                    "Weight": 0.2
+                },
+                {
+                    "ComponentName": "TriangleClosure2",
+                    "Weight": 0.45
+                }
+            ]
+        },
+        {
+            "Start": 1221340390,
+            "End": 1232594783,
+            "Components": [
+                {
+                    "ComponentName": "DegreeModelComponent",
+                    "Weight": 0.28
+                },
+                {
+                    "ComponentName": "RandomAttachment",
+                    "Weight": 0.31
+                },
+                {
+                    "ComponentName": "TriangleClosure2",
+                    "Weight": 0.41
+                }
+            ]
+        }
+    ],
+    "OperationModel": {
+        "Name": "Clone",
+        "Start": 1165073426,
+        "FileName": "experiments/facebook/OpModel.feta"
+    }
+}
