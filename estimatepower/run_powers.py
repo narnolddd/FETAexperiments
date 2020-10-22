@@ -24,7 +24,7 @@ guesses = np.linspace(-0.1,2.1,num=111)
 for p in params:
     print(p)
     pstring = str(round(p,2))
-    graphname = "DP"+pstring+".dat"
+    graphname = "DP-"+links+"-"+pstring+".dat"
     tmp1 = re.sub("NAME", graphname, grow)
     tmp2 = re.sub("AAA", pstring, tmp1)
     tmp3 = re.sub("LINKS", links, tmp2)

@@ -1,26 +1,28 @@
 import sys
 import os
 import numpy as np
-sys.path.insert(1, '/home/narnoldddd/CODE/FETA3')
+import json
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
 from feta import *
 
 root = "experiments/citations/changepoint/"
 tmp = root+"tmp.json"
-start = 820800000
+start = 1010800000
 end = 1015956000
 
-results_file = root+"noChangepoints.json"
+results_file = root+"noChangepoints2.json"
 with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()
 
-omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}, {"ComponentName":"TriangleClosure"}]
+omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}]
 
 fmm = FitMixedModel(start,end,1)
 act = Action(fmm)
 data = DataObject("data/cit-HepPh-new.txt")
 
 max_intervals = 20
+
 for ni in range(1,max_intervals):
     intervals = np.linspace(start,end,num=ni+1)
     obm = []
@@ -28,7 +30,8 @@ for ni in range(1,max_intervals):
         obm.append(ObjectModel(round(intervals[i]),round(intervals[i+1]),omcs))
     fm = FetaObject(data,act,obm)
     with open(tmp,'w') as f:
-        f.write(FetaEncoder().encode(fm))
+        fm = FetaEncoder().encode(fm)
+        f.write(json.dumps(json.loads(fm), indent = 2))
         f.close()
     os.system("java -jar feta3-1.0.0.jar "+tmp+" >> "+results_file)
     with open(results_file,'a') as f:

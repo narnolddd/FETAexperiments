@@ -3,7 +3,7 @@
     "GraphInputFile": "seed_graphs/clique-5.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/estimatepower/graphfiles/DP0.4.dat",
+    "GraphOutputFile": "experiments/estimatepower/graphfiles/DP2.0.dat",
     "Directed": false
   },
   "Action": {
@@ -21,7 +21,7 @@
         {
           "ComponentName": "DegreePower",
           "Weight": 1.0,
-          "Power": 0.4
+          "Power": 2.0
         }
       ]
     }
