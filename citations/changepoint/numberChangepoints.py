@@ -2,22 +2,22 @@ import sys
 import os
 import numpy as np
 import json
-#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
+sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
 from feta import *
 
 root = "experiments/citations/changepoint/"
 tmp = root+"tmp.json"
-start = 1010800000
+start = 747411840
 end = 1015956000
 
-results_file = root+"noChangepoints2.json"
+results_file = root+"noChangepoints.json"
 with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()
 
 omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}]
 
-fmm = FitMixedModel(start,end,1)
+fmm = FitMixedModel(start,end,1, debug=False)
 act = Action(fmm)
 data = DataObject("data/cit-HepPh-new.txt")
 

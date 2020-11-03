@@ -10,7 +10,8 @@
       "StartTime": 1010800000,
       "MaxTime": 1015956000,
       "Interval": 1,
-      "Granularity": 100
+      "Granularity": 100,
+      "DebugMode": false
     }
   },
   "ObjectModel": [
