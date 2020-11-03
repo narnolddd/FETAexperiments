@@ -2,7 +2,8 @@ import sys
 import os
 import numpy as np
 import json
-sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
+sys.path.insert(1, '/home/ubuntu/FETA3')
 from feta import *
 
 root = "experiments/citations/changepoint/"
