@@ -16,7 +16,7 @@ with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()
 
-omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}]
+omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}, {"ComponentName":"TriangleClosure"}]
 
 fmm = FitMixedModel(start,end,1, debug=False)
 act = Action(fmm)
