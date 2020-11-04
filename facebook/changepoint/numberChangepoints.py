@@ -1,7 +1,7 @@
 import sys
 import os
 import numpy as np
-sys.path.insert(1, '/home/narnoldddd/CODE/FETA3')
+sys.path.insert(1, '/home/ubuntu/FETA3')
 from feta import *
 
 root = "experiments/facebook/changepoint/"
