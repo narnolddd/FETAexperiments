@@ -7,7 +7,7 @@
   },
   "Action": {
     "FitMixedModel": {
-      "StartTime": 1010800000,
+      "StartTime": 747411840,
       "MaxTime": 1015956000,
       "Interval": 1,
       "Granularity": 100,
@@ -16,223 +16,67 @@
   },
   "ObjectModel": [
     {
-      "Start": 1010800000,
-      "End": 1011071368,
+      "Start": 747411840,
+      "End": 801120672,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent"
         },
         {
           "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
         }
       ]
     },
     {
-      "Start": 1011071368,
-      "End": 1011342737,
+      "Start": 801120672,
+      "End": 854829504,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent"
         },
         {
           "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
         }
       ]
     },
     {
-      "Start": 1011342737,
-      "End": 1011614105,
+      "Start": 854829504,
+      "End": 908538336,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent"
         },
         {
           "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
         }
       ]
     },
     {
-      "Start": 1011614105,
-      "End": 1011885474,
+      "Start": 908538336,
+      "End": 962247168,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent"
         },
         {
           "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1011885474,
-      "End": 1012156842,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
         },
         {
-          "ComponentName": "RandomAttachment"
+          "ComponentName": "TriangleClosure"
         }
       ]
     },
     {
-      "Start": 1012156842,
-      "End": 1012428211,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1012428211,
-      "End": 1012699579,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1012699579,
-      "End": 1012970947,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1012970947,
-      "End": 1013242316,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1013242316,
-      "End": 1013513684,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1013513684,
-      "End": 1013785053,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1013785053,
-      "End": 1014056421,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1014056421,
-      "End": 1014327789,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1014327789,
-      "End": 1014599158,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1014599158,
-      "End": 1014870526,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1014870526,
-      "End": 1015141895,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1015141895,
-      "End": 1015413263,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1015413263,
-      "End": 1015684632,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent"
-        },
-        {
-          "ComponentName": "RandomAttachment"
-        }
-      ]
-    },
-    {
-      "Start": 1015684632,
+      "Start": 962247168,
       "End": 1015956000,
       "Components": [
         {
@@ -240,6 +84,9 @@
         },
         {
           "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
         }
       ]
     }
