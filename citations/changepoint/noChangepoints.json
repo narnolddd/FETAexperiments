@@ -19,3 +19,49 @@
 ,{"changepoints": 4, "intervals": [
 {"start":747411840, "c0max" : 3.04615603124989, "raw": 21641.58380955183, "choices": 19429, "models": [{"Degree": 0.46},{"Random": 0.14},{"TriangleClosure": 0.4}]},
 {"start":801120672, "c0max" : 7.1496268564216, "raw": 99208.67954438334, "choices": 50435, "models": [{"Degree": 0.29},{"Random": 0.11},{"TriangleClosure": 0.6}]},
+{"start":854829504, "c0max" : 12.37155801930134, "raw": 204663.01617018058, "choices": 81364, "models": [{"Degree": 0.2},{"Random": 0.1},{"TriangleClosure": 0.7}]},
+{"start":908538336, "c0max" : 17.693199759141827, "raw": 327355.8056108378, "choices": 113935, "models": [{"Degree": 0.18},{"Random": 0.07},{"TriangleClosure": 0.75}]},
+{"start":962247168, "c0max" : 22.032828061270106, "raw": 431092.988423938, "choices": 139398, "models": [{"Degree": 0.16},{"Random": 0.07},{"TriangleClosure": 0.77}]}],
+"finalc0": 14.575672205285743, "finalraw": 1083962.0735588914, "finalchoices": 404561}
+,{"changepoints": 5, "intervals": [
+{"start":747411840, "c0max" : 2.6740793497243573, "raw": 13493.095485851341, "choices": 13718, "models": [{"Degree": 0.49},{"Random": 0.15},{"TriangleClosure": 0.36}]},
+{"start":792169200, "c0max" : 5.6873660151512055, "raw": 61295.81193833578, "choices": 35263, "models": [{"Degree": 0.32},{"Random": 0.12},{"TriangleClosure": 0.56}]},
+{"start":836926560, "c0max" : 10.596220791762287, "raw": 140343.37342042863, "choices": 59455, "models": [{"Degree": 0.24},{"Random": 0.09},{"TriangleClosure": 0.67}]},
+{"start":881683920, "c0max" : 14.023406698935942, "raw": 201131.03597940205, "choices": 76165, "models": [{"Degree": 0.19},{"Random": 0.1},{"TriangleClosure": 0.71}]},
+{"start":926441280, "c0max" : 19.166397326070385, "raw": 297719.7317540384, "choices": 100814, "models": [{"Degree": 0.17},{"Random": 0.07},{"TriangleClosure": 0.76}]},
+{"start":971198640, "c0max" : 22.24493104573424, "raw": 369604.49424214684, "choices": 119146, "models": [{"Degree": 0.15},{"Random": 0.07},{"TriangleClosure": 0.78}]}],
+"finalc0": 14.562184718481483, "finalraw": 1083587.5428202031, "finalchoices": 404561}
+,{"changepoints": 6, "intervals": [
+{"start":747411840, "c0max" : 2.5113295153256496, "raw": 10294.681517237583, "choices": 11180, "models": [{"Degree": 0.51},{"Random": 0.15},{"TriangleClosure": 0.34}]},
+{"start":785775291, "c0max" : 4.974390358088592, "raw": 40994.75001092536, "choices": 25553, "models": [{"Degree": 0.35},{"Random": 0.12},{"TriangleClosure": 0.53}]},
+{"start":824138743, "c0max" : 8.757236830841604, "raw": 92343.6012433411, "choices": 42557, "models": [{"Degree": 0.26},{"Random": 0.1},{"TriangleClosure": 0.64}]},
+{"start":862502194, "c0max" : 11.979995025685136, "raw": 145135.33852035014, "choices": 58446, "models": [{"Degree": 0.21},{"Random": 0.1},{"TriangleClosure": 0.69}]},
+{"start":900865646, "c0max" : 16.407281261017566, "raw": 213430.06352482925, "choices": 76287, "models": [{"Degree": 0.19},{"Random": 0.08},{"TriangleClosure": 0.73}]},
+{"start":939229097, "c0max" : 19.44531386111993, "raw": 261309.58827304255, "choices": 88054, "models": [{"Degree": 0.17},{"Random": 0.07},{"TriangleClosure": 0.76}]},
+{"start":977592549, "c0max" : 22.771144169852594, "raw": 320313.1401953607, "choices": 102484, "models": [{"Degree": 0.15},{"Random": 0.07},{"TriangleClosure": 0.78}]}],
+"finalc0": 14.57059632224575, "finalraw": 1083821.1632850866, "finalchoices": 404561}
+,{"changepoints": 7, "intervals": [
+{"start":747411840, "c0max" : 2.375442981708524, "raw": 7890.477521019567, "choices": 9120, "models": [{"Degree": 0.55},{"Random": 0.14},{"TriangleClosure": 0.31}]},
+{"start":780979860, "c0max" : 4.36518850901881, "raw": 28923.55180411728, "choices": 19627, "models": [{"Degree": 0.37},{"Random": 0.13},{"TriangleClosure": 0.5}]},
+{"start":814547880, "c0max" : 7.452480226415728, "raw": 67537.3892866929, "choices": 33625, "models": [{"Degree": 0.28},{"Random": 0.1},{"TriangleClosure": 0.62}]},
+{"start":848115900, "c0max" : 11.059534204299595, "raw": 110705.28321804128, "choices": 46064, "models": [{"Degree": 0.23},{"Random": 0.09},{"TriangleClosure": 0.68}]},
+{"start":881683920, "c0max" : 13.133376323826043, "raw": 142498.8767411426, "choices": 55336, "models": [{"Degree": 0.19},{"Random": 0.11},{"TriangleClosure": 0.7}]},
+{"start":915251940, "c0max" : 18.06731014684147, "raw": 206097.84496731678, "choices": 71213, "models": [{"Degree": 0.18},{"Random": 0.07},{"TriangleClosure": 0.75}]},
+{"start":948819960, "c0max" : 19.889906959124858, "raw": 236606.53776830732, "choices": 79127, "models": [{"Degree": 0.17},{"Random": 0.07},{"TriangleClosure": 0.76}]},
+{"start":982387980, "c0max" : 22.729045049640312, "raw": 282530.44216595293, "choices": 90449, "models": [{"Degree": 0.15},{"Random": 0.07},{"TriangleClosure": 0.78}]}],
+"finalc0": 14.533519914526503, "finalraw": 1082790.4034725907, "finalchoices": 404561}
+,{"changepoints": 8, "intervals": [
+{"start":747411840, "c0max" : 2.3434869506816165, "raw": 6509.0842911838, "choices": 7643, "models": [{"Degree": 0.55},{"Random": 0.14},{"TriangleClosure": 0.31}]},
+{"start":777250080, "c0max" : 3.925641848426238, "raw": 22093.81251714046, "choices": 16156, "models": [{"Degree": 0.39},{"Random": 0.14},{"TriangleClosure": 0.47}]},
+{"start":807088320, "c0max" : 6.267433073528334, "raw": 46218.208587252906, "choices": 25182, "models": [{"Degree": 0.29},{"Random": 0.12},{"TriangleClosure": 0.59}]},
+{"start":836926560, "c0max" : 9.920857054100473, "raw": 83033.81822174219, "choices": 36186, "models": [{"Degree": 0.25},{"Random": 0.09},{"TriangleClosure": 0.66}]},
+{"start":866764800, "c0max" : 12.058759230986857, "raw": 111821.50700049193, "choices": 44912, "models": [{"Degree": 0.21},{"Random": 0.1},{"TriangleClosure": 0.69}]},
+{"start":896603040, "c0max" : 14.824342214191953, "raw": 147006.0642280913, "choices": 54522, "models": [{"Degree": 0.18},{"Random": 0.1},{"TriangleClosure": 0.72}]},
+{"start":926441280, "c0max" : 18.735402495367776, "raw": 197234.5063108127, "choices": 67306, "models": [{"Degree": 0.18},{"Random": 0.07},{"TriangleClosure": 0.75}]},
+{"start":956279520, "c0max" : 20.490787047639873, "raw": 216668.133122837, "choices": 71745, "models": [{"Degree": 0.16},{"Random": 0.07},{"TriangleClosure": 0.77}]},
+{"start":986117760, "c0max" : 22.893159651488673, "raw": 253312.98474923425, "choices": 80909, "models": [{"Degree": 0.15},{"Random": 0.07},{"TriangleClosure": 0.78}]}],
+"finalc0": 14.573368210117033, "finalraw": 1083898.1190287864, "finalchoices": 404561}
+,{"changepoints": 9, "intervals": [
+{"start":747411840, "c0max" : 2.282988289919444, "raw": 5571.199873173821, "choices": 6749, "models": [{"Degree": 0.58},{"Random": 0.13},{"TriangleClosure": 0.29}]},
+{"start":774266256, "c0max" : 3.649218475831403, "raw": 16414.425200843347, "choices": 12680, "models": [{"Degree": 0.41},{"Random": 0.14},{"TriangleClosure": 0.45}]},
+{"start":801120672, "c0max" : 5.54337075041016, "raw": 36206.13483156545, "choices": 21141, "models": [{"Degree": 0.32},{"Random": 0.12},{"TriangleClosure": 0.56}]},

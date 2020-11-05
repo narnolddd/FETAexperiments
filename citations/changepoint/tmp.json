@@ -17,6 +17,21 @@
   "ObjectModel": [
     {
       "Start": 747411840,
+      "End": 774266256,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
+        }
+      ]
+    },
+    {
+      "Start": 774266256,
       "End": 801120672,
       "Components": [
         {
@@ -32,6 +47,21 @@
     },
     {
       "Start": 801120672,
+      "End": 827975088,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
+        }
+      ]
+    },
+    {
+      "Start": 827975088,
       "End": 854829504,
       "Components": [
         {
@@ -47,6 +77,21 @@
     },
     {
       "Start": 854829504,
+      "End": 881683920,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
+        }
+      ]
+    },
+    {
+      "Start": 881683920,
       "End": 908538336,
       "Components": [
         {
@@ -62,6 +107,21 @@
     },
     {
       "Start": 908538336,
+      "End": 935392752,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
+        }
+      ]
+    },
+    {
+      "Start": 935392752,
       "End": 962247168,
       "Components": [
         {
@@ -77,6 +137,21 @@
     },
     {
       "Start": 962247168,
+      "End": 989101584,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent"
+        },
+        {
+          "ComponentName": "RandomAttachment"
+        },
+        {
+          "ComponentName": "TriangleClosure"
+        }
+      ]
+    },
+    {
+      "Start": 989101584,
       "End": 1015956000,
       "Components": [
         {
