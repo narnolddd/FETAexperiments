@@ -13,8 +13,10 @@ grow = root+"grow.json"
 measure = root+"measure.json"
 start = 1165073426
 end = 1232593783
-cps = 0
+cps = int(sys.argv[1])
 experiments = 10
+
+graphname = root+"averaged/FB_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
     model_array = []
@@ -41,7 +43,7 @@ for j in range(experiments):
     act = Grow(start,end,)
     act = Action(grow=act)
     operation = OperationModel("Clone", start, root+"OpModel.feta")
-    data = DataObject(infile=root+"facebook.dat",outfile=root+"averaged/GRAPH.dat")
+    data = DataObject(infile=root+"facebook.dat",outfile=graphname)
     fm = FetaObject(data,act,model_array,operation)
     fm = FetaEncoder().encode(fm)
 
@@ -52,7 +54,7 @@ for j in range(experiments):
     os.system("java -jar feta3-1.0.0.jar "+grow)
 
     meas = Measure(start,end,interval=86400,fname=root+"averaged/Best"+str(cps)+"-"+str(j)+".dat")
-    data = DataObject(infile=root+"averaged/GRAPH.dat")
+    data = DataObject(infile=graphname)
     act = Action(measure=meas)
     fm = FetaObject(data,act)
     fm = FetaEncoder().encode(fm)
@@ -62,4 +64,4 @@ for j in range(experiments):
         f.close()
 
     os.system("java -jar feta3-1.0.0.jar "+measure)
-    os.system("rm "+root+"averaged/GRAPH.dat")
+    os.system("rm "+graphname)
