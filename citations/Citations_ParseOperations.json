@@ -10,7 +10,7 @@
       "Start": 100,
       "Interval":10,
       "MaxNodes": 34343,
-      "FileName": "experiments/citations/CitationsOpModel.feta"
+      "FileName": "experiments/citations/OpModel.feta"
     }
   }
 }
