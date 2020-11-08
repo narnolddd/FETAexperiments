@@ -16,7 +16,7 @@ with open(results_file,'w') as f:
 
 omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}, {"ComponentName":"TriangleClosure"}]
 
-fmm = FitMixedModel(start,end,1)
+fmm = FitMixedModel(start,end,1,debug=True)
 act = Action(fmm)
 data = DataObject("experiments/enron/enron.dat")
 
