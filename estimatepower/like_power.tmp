@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/estimatepower/graphfiles/DP-5-2.0.dat",
+    "GraphInputFile": "experiments/estimatepower/graphfiles/DP-20-0.0.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
     "Directed": false
@@ -21,7 +21,7 @@
         {
           "ComponentName": "DegreePower",
           "Weight": 1.0,
-          "Power": 2.1
+          "Power": 0.30000000000000004
         }
       ]
     }

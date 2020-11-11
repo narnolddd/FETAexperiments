@@ -3,7 +3,7 @@
     "GraphInputFile": "seed_graphs/clique-5.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/estimatepower/graphfiles/DP-5-2.0.dat",
+    "GraphOutputFile": "experiments/estimatepower/graphfiles/DP-20-0.0.dat",
     "Directed": false
   },
   "Action": {
@@ -21,7 +21,7 @@
         {
           "ComponentName": "DegreePower",
           "Weight": 1.0,
-          "Power": 2.0
+          "Power": 0.0
         }
       ]
     }
@@ -29,6 +29,6 @@
   "OperationModel":
   {
     "Name": "PreferentialAttachment",
-    "InitialDegree": 5
+    "InitialDegree": 20
   }
 }
