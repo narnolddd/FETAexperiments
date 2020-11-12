@@ -1,6 +1,6 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/estimatepower/graphfiles/DP-20-2.0.dat",
+    "GraphInputFile": "experiments/estimatepower/graphfiles/DP-50-2.0.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
     "Directed": false
