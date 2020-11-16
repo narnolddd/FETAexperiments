@@ -9,15 +9,16 @@ import os
 from feta import *
 
 root = "experiments/citations/"
-grow = root+"grow.json"
-measure = root+"measure.json"
 start = 747411840
 end = 1015956000
 model_array = []
 cps = int(sys.argv[1])
 experiments = 10
 
-graphname = root+"averaged/CIT_GRAPH_"+str(cps)+".dat"
+grow = root+"grow-"+str(cps)+".json"
+measure = root+"measure-"+str(cps)+".json"
+
+graphname = root+"graphfiles/CIT_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
     print(j)
@@ -37,7 +38,7 @@ for j in range(experiments):
         if i == cps:
             modelend+=1000
         for comp in interval['models']:
-            comps.append(ObjectModelComponent(list(comp.keys())[0],list(comp.values())[0]))
+            comps.append(ObjectModelComponent(name_to_model[list(comp.keys())[0]],list(comp.values())[0]))
         model_array.append(ObjectModel(modelstart,modelend,comps))
 
     act = Grow(start,end,)

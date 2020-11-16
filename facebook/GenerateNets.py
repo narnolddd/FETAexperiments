@@ -4,19 +4,21 @@ import sys
 import json
 import pandas as pd
 sys.path.insert(1, '/home/ubuntu/FETA3')
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
 import numpy as np
 import os
 from feta import *
 
+cps = int(sys.argv[1])
 root = "experiments/facebook/"
-grow = root+"grow.json"
-measure = root+"measure.json"
 start = 1165073426
 end = 1232593783
-cps = int(sys.argv[1])
 experiments = 10
 
-graphname = root+"averaged/FB_GRAPH_"+str(cps)+".dat"
+grow = root+"grow-"+str(cps)+".json"
+measure = root+"measure-"+str(cps)+".json"
+
+graphname = root+"graphfiles/FB_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
     model_array = []
@@ -37,7 +39,7 @@ for j in range(experiments):
         if i == cps:
             modelend+=1000
         for comp in interval['models']:
-            comps.append(ObjectModelComponent(list(comp.keys())[0],list(comp.values())[0]))
+            comps.append(ObjectModelComponent(name_to_model[list(comp.keys())[0]],list(comp.values())[0]))
         model_array.append(ObjectModel(modelstart,modelend,comps))
 
     act = Grow(start,end,)

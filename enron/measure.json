@@ -1,14 +1,14 @@
 {
   "Data": {
-    "GraphInputFile": "experiments/facebook/graphfiles/FB_GRAPH_0.dat",
+    "GraphInputFile": "experiments/enron/averaged/EN_GRAPH_0.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
     "Directed": false
   },
   "Action": {
     "Measure": {
-      "Start": 1165073426,
-      "MaxTime": 1232593783,
+      "Start": 896283060,
+      "MaxTime": 897283060,
       "Interval": 86400,
       "Statistics": [
         "NoNodes",
@@ -21,7 +21,7 @@
         "Clustering",
         "TriangleCount"
       ],
-      "FileName": "experiments/facebook/averaged/Best0-9.dat"
+      "FileName": "experiments/enron/averaged/Best0-9.dat"
     }
   }
 }

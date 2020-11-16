@@ -3,20 +3,21 @@ warnings.filterwarnings("ignore")
 import sys
 import json
 import pandas as pd
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
 sys.path.insert(1, '/home/ubuntu/FETA3')
 import numpy as np
 import os
 from feta import *
 
-root = "experiments/facebook/"
-grow = root+"grow.json"
-measure = root+"measure.json"
+cps = int(sys.argv[1])
+root = "experiments/enron/"
+grow = root+"grow-"+str(cps)+".json"
+measure = root+"measure-"+str(cps)+".json"
 start = 896283060
 end = 1024099200
-cps = int(sys.argv[1])
 experiments = 10
 
-graphname = root+"averaged/EN_GRAPH_"+str(cps)+".dat"
+graphname = root+"graphfiles/EN_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
     model_array = []
@@ -37,12 +38,12 @@ for j in range(experiments):
         if i == cps:
             modelend+=1000
         for comp in interval['models']:
-            comps.append(ObjectModelComponent(list(comp.keys())[0],list(comp.values())[0]))
+            comps.append(ObjectModelComponent(name_to_model[list(comp.keys())[0]],list(comp.values())[0]))
         model_array.append(ObjectModel(modelstart,modelend,comps))
 
     act = Grow(start,end,)
     act = Action(grow=act)
-    operation = OperationModel("Clone", start, root+"OpModel.feta")
+    operation = OperationModel("Clone", start, root+"enron.feta")
     data = DataObject(infile=root+"enron.dat",outfile=graphname)
     fm = FetaObject(data,act,model_array,operation)
     fm = FetaEncoder().encode(fm)

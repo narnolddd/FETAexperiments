@@ -3,7 +3,7 @@
     "GraphInputFile": "experiments/facebook/facebook.dat",
     "GraphInputType": "NNT",
     "GraphOutputType": "NNT",
-    "GraphOutputFile": "experiments/facebook/averaged/GRAPH.dat",
+    "GraphOutputFile": "experiments/facebook/graphfiles/FB_GRAPH_0.dat",
     "Directed": false
   },
   "Action": {

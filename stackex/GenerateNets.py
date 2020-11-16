@@ -4,20 +4,22 @@ import sys
 import json
 import pandas as pd
 sys.path.insert(1, '/home/ubuntu/FETA3')
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
 import numpy as np
 import os
 from feta import *
 
 root = "experiments/stackex/"
-grow = root+"grow.json"
-measure = root+"measure.json"
 start = 1271680475
 end = 1457261724
 model_array = []
 cps = int(sys.argv[1])
 experiments = 10
 
-graphname = root="averaged/SX_GRAPH_"+str(cps)+".dat"
+grow = root+"grow-"+str(cps)+".json"
+measure = root+"measure-"+str(cps)+".json"
+
+graphname = root="graphfiles/SX_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
     print(j)
