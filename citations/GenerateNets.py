@@ -4,15 +4,15 @@ import sys
 import json
 import pandas as pd
 sys.path.insert(1, '/home/ubuntu/FETA3')
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
 import numpy as np
 import os
 from feta import *
 
+cps = int(sys.argv[1])
 root = "experiments/citations/"
 start = 747411840
 end = 1015956000
-model_array = []
-cps = int(sys.argv[1])
 experiments = 10
 
 grow = root+"grow-"+str(cps)+".json"
@@ -21,6 +21,7 @@ measure = root+"measure-"+str(cps)+".json"
 graphname = root+"graphfiles/CIT_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
+    model_array = []
     print(j)
 
     with open(root+"changepoint/noChangepoints.json",'r') as f:
@@ -54,7 +55,7 @@ for j in range(experiments):
 
     os.system("java -jar feta3-1.0.0.jar "+grow)
 
-    meas = Measure(start,end,interval=86400,fname=root+"averaged/Best"+str(cps)+"-"+str(j)+".dat")
+    meas = Measure(start,end,interval=604800,fname=root+"averaged/Best"+str(cps)+"-"+str(j)+".dat")
     data = DataObject(infile=graphname)
     act = Action(measure=meas)
     fm = FetaObject(data,act)

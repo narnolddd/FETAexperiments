@@ -9,11 +9,10 @@ import numpy as np
 import os
 from feta import *
 
+cps = int(sys.argv[1])
 root = "experiments/stackex/"
 start = 1271680475
 end = 1457261724
-model_array = []
-cps = int(sys.argv[1])
 experiments = 10
 
 grow = root+"grow-"+str(cps)+".json"
@@ -22,6 +21,7 @@ measure = root+"measure-"+str(cps)+".json"
 graphname = root+"graphfiles/SX_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
+    model_array = []
     print(j)
 
     with open(root+"changepoint/noChangepoints.json",'r') as f:

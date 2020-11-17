@@ -11,11 +11,12 @@ from feta import *
 
 cps = int(sys.argv[1])
 root = "experiments/enron/"
-grow = root+"grow-"+str(cps)+".json"
-measure = root+"measure-"+str(cps)+".json"
 start = 896283060
 end = 1024099200
 experiments = 10
+
+grow = root+"grow-"+str(cps)+".json"
+measure = root+"measure-"+str(cps)+".json"
 
 graphname = root+"graphfiles/EN_GRAPH_"+str(cps)+".dat"
 
@@ -54,7 +55,7 @@ for j in range(experiments):
 
     os.system("java -jar feta3-1.0.0.jar "+grow)
 
-    meas = Measure(start,end,interval=86400,fname=root+"averaged/Best"+str(cps)+"-"+str(j)+".dat")
+    meas = Measure(start,end,interval=604800,fname=root+"averaged/Best"+str(cps)+"-"+str(j)+".dat")
     data = DataObject(infile=graphname)
     act = Action(measure=meas)
     fm = FetaObject(data,act)
