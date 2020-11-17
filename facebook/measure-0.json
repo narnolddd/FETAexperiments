@@ -1,0 +1,27 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/facebook/graphfiles/FB_GRAPH_0.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1165073426,
+      "MaxTime": 1232593783,
+      "Interval": 86400,
+      "Statistics": [
+        "NoNodes",
+        "NoLinks",
+        "AverageDegree",
+        "MaxDegree",
+        "Singletons",
+        "MeanSquaredDegree",
+        "Assortativity",
+        "Clustering",
+        "TriangleCount"
+      ],
+      "FileName": "experiments/facebook/averaged/Best0-9.dat"
+    }
+  }
+}

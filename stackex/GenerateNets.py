@@ -19,7 +19,7 @@ experiments = 10
 grow = root+"grow-"+str(cps)+".json"
 measure = root+"measure-"+str(cps)+".json"
 
-graphname = root="graphfiles/SX_GRAPH_"+str(cps)+".dat"
+graphname = root+"graphfiles/SX_GRAPH_"+str(cps)+".dat"
 
 for j in range(experiments):
     print(j)
@@ -39,7 +39,7 @@ for j in range(experiments):
         if i == cps:
             modelend+=1000
         for comp in interval['models']:
-            comps.append(ObjectModelComponent(list(comp.keys())[0],list(comp.values())[0]))
+            comps.append(ObjectModelComponent(name_to_model[list(comp.keys())[0]],list(comp.values())[0]))
         model_array.append(ObjectModel(modelstart,modelend,comps))
 
     act = Grow(start,end,)

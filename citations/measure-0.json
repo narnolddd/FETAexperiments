@@ -1,0 +1,27 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/citations/graphfiles/CIT_GRAPH_0.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Measure": {
+      "Start": 747411840,
+      "MaxTime": 1015956000,
+      "Interval": 86400,
+      "Statistics": [
+        "NoNodes",
+        "NoLinks",
+        "AverageDegree",
+        "MaxDegree",
+        "Singletons",
+        "MeanSquaredDegree",
+        "Assortativity",
+        "Clustering",
+        "TriangleCount"
+      ],
+      "FileName": "experiments/citations/averaged/Best0-9.dat"
+    }
+  }
+}

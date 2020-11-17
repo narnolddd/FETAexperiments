@@ -1,0 +1,41 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/enron/graphfiles/EN_GRAPH_0.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 896283060,
+      "MaxTime": 1024099200,
+      "Interval": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 896283060,
+      "End": 1024100200,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.73
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.07
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.2
+        }
+      ]
+    }
+  ],
+  "OperationModel": {
+    "Name": "Clone",
+    "Start": 896283060,
+    "FileName": "experiments/enron/enron.feta"
+  }
+}

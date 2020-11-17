@@ -1,0 +1,27 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/graphfiles/EN_GRAPH_0.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Measure": {
+      "Start": 896283060,
+      "MaxTime": 1024099200,
+      "Interval": 86400,
+      "Statistics": [
+        "NoNodes",
+        "NoLinks",
+        "AverageDegree",
+        "MaxDegree",
+        "Singletons",
+        "MeanSquaredDegree",
+        "Assortativity",
+        "Clustering",
+        "TriangleCount"
+      ],
+      "FileName": "experiments/enron/averaged/Best0-9.dat"
+    }
+  }
+}

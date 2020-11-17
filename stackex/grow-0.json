@@ -1,0 +1,203 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/sx_reordered.txt",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/stackex/graphfiles/SX_GRAPH_0.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 1271680475,
+      "MaxTime": 1457261724,
+      "Interval": 10000
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    },
+    {
+      "Start": 1271680475,
+      "End": 1457262724,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure2",
+          "Weight": 0.08
+        }
+      ]
+    }
+  ],
+  "OperationModel": {
+    "Name": "Clone",
+    "Start": 1271680475,
+    "FileName": "experiments/stackex/OpModel.feta"
+  }
+}
