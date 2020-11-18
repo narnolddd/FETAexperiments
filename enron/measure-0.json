@@ -9,7 +9,7 @@
     "Measure": {
       "Start": 896283060,
       "MaxTime": 1024099200,
-      "Interval": 86400,
+      "Interval": 604800,
       "Statistics": [
         "NoNodes",
         "NoLinks",
