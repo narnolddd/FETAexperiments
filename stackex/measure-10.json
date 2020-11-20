@@ -1,0 +1,27 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/stackex/graphfiles/SX_GRAPH_10.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "Directed": false
+  },
+  "Action": {
+    "Measure": {
+      "Start": 1271680475,
+      "MaxTime": 1457261724,
+      "Interval": 86400,
+      "Statistics": [
+        "NoNodes",
+        "NoLinks",
+        "AverageDegree",
+        "MaxDegree",
+        "Singletons",
+        "MeanSquaredDegree",
+        "Assortativity",
+        "Clustering",
+        "TriangleCount"
+      ],
+      "FileName": "experiments/stackex/averaged/Best10-9.dat"
+    }
+  }
+}
