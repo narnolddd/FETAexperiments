@@ -1,1 +1,2 @@
-c0 1.8469982115024453 raw 44259.27560208804 choices 72135
+{"changepoints": 0, "intervals": [
+{"start":1, "c0max" : NaN, "raw": NaN, "choices": 994, "models": ],

@@ -3,8 +3,8 @@ warnings.filterwarnings("ignore")
 import sys
 import json
 import pandas as pd
-sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
-#sys.path.insert(1, '/home/ubuntu/FETA3')
+#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
+sys.path.insert(1, '/home/ubuntu/FETA3')
 import numpy as np
 import os
 from feta import *
