@@ -11,7 +11,7 @@ from feta import *
 
 cps = int(sys.argv[1])
 root = "experiments/citations/"
-start = 747411840
+start = 820800000
 end = 1015956000
 experiments = 10
 

@@ -8,7 +8,7 @@ from feta import *
 
 root = "experiments/citations/changepoint/"
 tmp = root+"tmp.json"
-start = 747411840
+start = 820800000
 end = 1015956000
 
 results_file = root+"noChangepoints.json"
