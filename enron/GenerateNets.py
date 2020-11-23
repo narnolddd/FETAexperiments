@@ -3,8 +3,8 @@ warnings.filterwarnings("ignore")
 import sys
 import json
 import pandas as pd
-#sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
-sys.path.insert(1, '/home/ubuntu/FETA3')
+sys.path.insert(1, '/Users/naomiarnold/CODE/NaomiFETA/FETA3.1')
+#sys.path.insert(1, '/home/ubuntu/FETA3')
 import numpy as np
 import os
 from feta import *
@@ -12,7 +12,7 @@ from feta import *
 cps = int(sys.argv[1])
 root = "experiments/enron/"
 start = 896283060
-end = 1024099200
+end = 1024089329
 experiments = 10
 
 grow = root+"grow-"+str(cps)+".json"
@@ -42,7 +42,7 @@ for j in range(experiments):
             comps.append(ObjectModelComponent(name_to_model[list(comp.keys())[0]],list(comp.values())[0]))
         model_array.append(ObjectModel(modelstart,modelend,comps))
 
-    act = Grow(start,end,)
+    act = Grow(start,end,1)
     act = Action(grow=act)
     operation = OperationModel("Clone", start, root+"enron.feta")
     data = DataObject(infile=root+"enron.dat",outfile=graphname)
