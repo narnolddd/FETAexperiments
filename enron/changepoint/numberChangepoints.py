@@ -6,7 +6,7 @@ from feta import *
 
 root = "experiments/enron/changepoint/"
 tmp = root+"tmp.json"
-start = 896283060
+start = 946684800
 end = 1024099200
 
 results_file = root+"noChangepoints.json"

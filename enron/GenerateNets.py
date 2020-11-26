@@ -11,7 +11,7 @@ from feta import *
 
 cps = int(sys.argv[1])
 root = "experiments/enron/"
-start = 896283060
+start = 946684800
 end = 1024089329
 experiments = 10
 
