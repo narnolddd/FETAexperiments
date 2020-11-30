@@ -8,34 +8,34 @@
   },
   "Action": {
     "Grow": {
-      "Start": 747411840,
+      "Start": 820800000,
       "MaxTime": 1015956000,
       "Interval": 10000
     }
   },
   "ObjectModel": [
     {
-      "Start": 747411840,
+      "Start": 820800000,
       "End": 1015957000,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.2
+          "Weight": 0.18
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.09
+          "Weight": 0.08
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.71
+          "Weight": 0.74
         }
       ]
     }
   ],
   "OperationModel": {
     "Name": "Clone",
-    "Start": 747411840,
+    "Start": 820800000,
     "FileName": "experiments/citations/OpModel.feta"
   }
 }

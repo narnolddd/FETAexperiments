@@ -7,7 +7,7 @@
   },
   "Action": {
     "Measure": {
-      "Start": 896283060,
+      "Start": 946684800,
       "MaxTime": 1024089329,
       "Interval": 604800,
       "Statistics": [
@@ -21,7 +21,7 @@
         "Clustering",
         "TriangleCount"
       ],
-      "FileName": "experiments/enron/averaged/Best10-9.dat"
+      "FileName": "experiments/enron/averaged/Best10-1.dat"
     }
   }
 }

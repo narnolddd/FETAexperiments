@@ -1,0 +1,203 @@
+{
+  "Data": {
+    "GraphInputFile": "experiments/enron/enron.dat",
+    "GraphInputType": "NNT",
+    "GraphOutputType": "NNT",
+    "GraphOutputFile": "experiments/enron/graphfiles/EN_GRAPH_9.dat",
+    "Directed": false
+  },
+  "Action": {
+    "Grow": {
+      "Start": 946684800,
+      "MaxTime": 1024089329,
+      "Interval": 1
+    }
+  },
+  "ObjectModel": [
+    {
+      "Start": 946684800,
+      "End": 954425253,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.76
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.11
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.13
+        }
+      ]
+    },
+    {
+      "Start": 954425253,
+      "End": 962165706,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.73
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.07
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.2
+        }
+      ]
+    },
+    {
+      "Start": 962165706,
+      "End": 969906159,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.7
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.09
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.21
+        }
+      ]
+    },
+    {
+      "Start": 969906159,
+      "End": 977646612,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.72
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.07
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.21
+        }
+      ]
+    },
+    {
+      "Start": 977646612,
+      "End": 985387064,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.71
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.05
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.24
+        }
+      ]
+    },
+    {
+      "Start": 985387064,
+      "End": 993127517,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.67
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.08
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.25
+        }
+      ]
+    },
+    {
+      "Start": 993127517,
+      "End": 1000867970,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.75
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.07
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.18
+        }
+      ]
+    },
+    {
+      "Start": 1000867970,
+      "End": 1008608423,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.76
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.08
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.16
+        }
+      ]
+    },
+    {
+      "Start": 1008608423,
+      "End": 1016348876,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.79
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.02
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.19
+        }
+      ]
+    },
+    {
+      "Start": 1016348876,
+      "End": 1024090329,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.7
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.11
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.19
+        }
+      ]
+    }
+  ],
+  "OperationModel": {
+    "Name": "Clone",
+    "Start": 946684800,
+    "FileName": "experiments/enron/enron.feta"
+  }
+}

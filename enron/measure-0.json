@@ -7,8 +7,8 @@
   },
   "Action": {
     "Measure": {
-      "Start": 896283060,
-      "MaxTime": 1024099200,
+      "Start": 946684800,
+      "MaxTime": 1024089329,
       "Interval": 604800,
       "Statistics": [
         "NoNodes",
@@ -21,7 +21,7 @@
         "Clustering",
         "TriangleCount"
       ],
-      "FileName": "experiments/enron/averaged/Best0-1.dat"
+      "FileName": "experiments/enron/averaged/Best0-9.dat"
     }
   }
 }

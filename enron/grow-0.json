@@ -8,15 +8,15 @@
   },
   "Action": {
     "Grow": {
-      "Start": 896283060,
-      "MaxTime": 1024099200,
-      "Interval": 10000
+      "Start": 946684800,
+      "MaxTime": 1024089329,
+      "Interval": 1
     }
   },
   "ObjectModel": [
     {
-      "Start": 896283060,
-      "End": 1024100200,
+      "Start": 946684800,
+      "End": 1024090329,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
@@ -35,7 +35,7 @@
   ],
   "OperationModel": {
     "Name": "Clone",
-    "Start": 896283060,
+    "Start": 946684800,
     "FileName": "experiments/enron/enron.feta"
   }
 }
