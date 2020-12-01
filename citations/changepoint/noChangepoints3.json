@@ -16,7 +16,6 @@
 {"start":918378000, "c0max" : 20.098852797729055, "raw": 326313.0708450127, "choices": 108747, "models": [{"Degree": 0.15},{"Random": 0.06},{"TriangleClosure": 0.79}]},
 {"start":967167000, "c0max" : 23.64824272391278, "raw": 403025.13725624187, "choices": 127407, "models": [{"Degree": 0.14},{"Random": 0.05},{"TriangleClosure": 0.81}]}],
 "finalc0": 17.7252783301794, "finalraw": 1064948.7033063408, "finalchoices": 370418}
-,{"changepoints": 4, "intervals": [
 ,{"changepoints": 5, "intervals": [
 {"start":820800000, "c0max" : 8.740742990616042, "raw": 73880.94030367695, "choices": 34078, "models": [{"Degree": 0.24},{"Random": 0.07},{"TriangleClosure": 0.69}]},
 {"start":853326000, "c0max" : 12.555725115035974, "raw": 116570.30304273994, "choices": 46072, "models": [{"Degree": 0.19},{"Random": 0.07},{"TriangleClosure": 0.74}]},
@@ -24,9 +23,4 @@
 {"start":918378000, "c0max" : 19.543868277051377, "raw": 212809.87086127832, "choices": 71589, "models": [{"Degree": 0.15},{"Random": 0.06},{"TriangleClosure": 0.79}]},
 {"start":950904000, "c0max" : 21.65460184756539, "raw": 236145.98932394563, "choices": 76790, "models": [{"Degree": 0.14},{"Random": 0.05},{"TriangleClosure": 0.81}]},
 {"start":983430000, "c0max" : 24.40396869889035, "raw": 280418.8100202684, "choices": 87775, "models": [{"Degree": 0.13},{"Random": 0.05},{"TriangleClosure": 0.82}]}],
-"finalc0": 17.730245415804813, "finalraw": 1065052.489556879, "finalchoices": 370418}
-,{"changepoints": 6, "intervals": [
-{"start":820800000, "c0max" : 8.528060859972506, "raw": 61606.65407770557, "choices": 28743, "models": [{"Degree": 0.25},{"Random": 0.07},{"TriangleClosure": 0.68}]},
-{"start":848679429, "c0max" : 11.960252230909218, "raw": 91354.72988744106, "choices": 36813, "models": [{"Degree": 0.2},{"Random": 0.07},{"TriangleClosure": 0.73}]},
-{"start":876558857, "c0max" : 13.16021386186643, "raw": 112788.5010036472, "choices": 43764, "models": [{"Degree": 0.16},{"Random": 0.09},{"TriangleClosure": 0.75}]},
-{"start":904438286, "c0max" : 17.40861014327931, "raw": 156973.08054526403, "choices": 54944, "models": [{"Degree": 0.16},{"Random": 0.06},{"TriangleClosure": 0.78}]},
+"finalc0": 17.730245415804813, "finalraw": 1065052.489556879, "finalchoices": 370418}]}

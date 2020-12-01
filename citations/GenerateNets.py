@@ -24,7 +24,7 @@ for j in range(experiments):
     model_array = []
     print(j)
 
-    with open(root+"changepoint/noChangepoints.json",'r') as f:
+    with open(root+"changepoint/noChangepoints3.json",'r') as f:
         data = json.load(f)
         x = pd.DataFrame(data['view'])
         obm = x.iloc[cps]['intervals']
