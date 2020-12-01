@@ -9,12 +9,12 @@ tmp = root+"tmp.json"
 start = 1271680475
 end = 1457261724
 
-results_file = root+"noChangepoints.json"
+results_file = root+"noChangepoints2.json"
 with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()
 
-omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}, {"ComponentName":"TriangleClosure2"}]
+omcs = [{"ComponentName":"DegreeModelComponent"}, {"ComponentName":"RandomAttachment"}, {"ComponentName":"TriangleClosure"}]
 
 fmm = FitMixedModel(start,end,1)
 act = Action(fmm)

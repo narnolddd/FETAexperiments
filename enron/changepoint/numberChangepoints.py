@@ -6,10 +6,10 @@ from feta import *
 
 root = "experiments/enron/changepoint/"
 tmp = root+"tmp.json"
-start = 946684800
+start = 997747200
 end = 1024099200
 
-results_file = root+"noChangepoints.json"
+results_file = root+"noChangepoints2.json"
 with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()

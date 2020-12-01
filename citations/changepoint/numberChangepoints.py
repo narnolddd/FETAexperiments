@@ -11,7 +11,7 @@ tmp = root+"tmp.json"
 start = 820800000
 end = 1015956000
 
-results_file = root+"noChangepoints.json"
+results_file = root+"noChangepoints2.json"
 with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()
