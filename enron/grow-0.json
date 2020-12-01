@@ -8,34 +8,34 @@
   },
   "Action": {
     "Grow": {
-      "Start": 946684800,
+      "Start": 997747200,
       "MaxTime": 1024089329,
       "Interval": 1
     }
   },
   "ObjectModel": [
     {
-      "Start": 946684800,
+      "Start": 997747200,
       "End": 1024090329,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.73
+          "Weight": 0.75
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.07
+          "Weight": 0.04
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.2
+          "Weight": 0.21
         }
       ]
     }
   ],
   "OperationModel": {
     "Name": "Clone",
-    "Start": 946684800,
+    "Start": 997747200,
     "FileName": "experiments/enron/enron.feta"
   }
 }

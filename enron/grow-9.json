@@ -8,33 +8,15 @@
   },
   "Action": {
     "Grow": {
-      "Start": 946684800,
+      "Start": 997747200,
       "MaxTime": 1024089329,
       "Interval": 1
     }
   },
   "ObjectModel": [
     {
-      "Start": 946684800,
-      "End": 954425253,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent",
-          "Weight": 0.76
-        },
-        {
-          "ComponentName": "RandomAttachment",
-          "Weight": 0.11
-        },
-        {
-          "ComponentName": "TriangleClosure",
-          "Weight": 0.13
-        }
-      ]
-    },
-    {
-      "Start": 954425253,
-      "End": 962165706,
+      "Start": 997747200,
+      "End": 1000381413,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
@@ -42,7 +24,43 @@
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.07
+          "Weight": 0.04
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.23
+        }
+      ]
+    },
+    {
+      "Start": 1000381413,
+      "End": 1003015626,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.73
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.08
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.19
+        }
+      ]
+    },
+    {
+      "Start": 1003015626,
+      "End": 1005649839,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.71
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.09
         },
         {
           "ComponentName": "TriangleClosure",
@@ -51,88 +69,16 @@
       ]
     },
     {
-      "Start": 962165706,
-      "End": 969906159,
+      "Start": 1005649839,
+      "End": 1008284052,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.7
+          "Weight": 0.82
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.09
-        },
-        {
-          "ComponentName": "TriangleClosure",
-          "Weight": 0.21
-        }
-      ]
-    },
-    {
-      "Start": 969906159,
-      "End": 977646612,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent",
-          "Weight": 0.72
-        },
-        {
-          "ComponentName": "RandomAttachment",
-          "Weight": 0.07
-        },
-        {
-          "ComponentName": "TriangleClosure",
-          "Weight": 0.21
-        }
-      ]
-    },
-    {
-      "Start": 977646612,
-      "End": 985387064,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent",
-          "Weight": 0.71
-        },
-        {
-          "ComponentName": "RandomAttachment",
-          "Weight": 0.05
-        },
-        {
-          "ComponentName": "TriangleClosure",
-          "Weight": 0.24
-        }
-      ]
-    },
-    {
-      "Start": 985387064,
-      "End": 993127517,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent",
-          "Weight": 0.67
-        },
-        {
-          "ComponentName": "RandomAttachment",
-          "Weight": 0.08
-        },
-        {
-          "ComponentName": "TriangleClosure",
-          "Weight": 0.25
-        }
-      ]
-    },
-    {
-      "Start": 993127517,
-      "End": 1000867970,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent",
-          "Weight": 0.75
-        },
-        {
-          "ComponentName": "RandomAttachment",
-          "Weight": 0.07
+          "Weight": 0.0
         },
         {
           "ComponentName": "TriangleClosure",
@@ -141,26 +87,8 @@
       ]
     },
     {
-      "Start": 1000867970,
-      "End": 1008608423,
-      "Components": [
-        {
-          "ComponentName": "DegreeModelComponent",
-          "Weight": 0.76
-        },
-        {
-          "ComponentName": "RandomAttachment",
-          "Weight": 0.08
-        },
-        {
-          "ComponentName": "TriangleClosure",
-          "Weight": 0.16
-        }
-      ]
-    },
-    {
-      "Start": 1008608423,
-      "End": 1016348876,
+      "Start": 1008284052,
+      "End": 1010918264,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
@@ -177,16 +105,88 @@
       ]
     },
     {
-      "Start": 1016348876,
+      "Start": 1010918264,
+      "End": 1013552477,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.72
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.0
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.28
+        }
+      ]
+    },
+    {
+      "Start": 1013552477,
+      "End": 1016186690,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.77
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.03
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.2
+        }
+      ]
+    },
+    {
+      "Start": 1016186690,
+      "End": 1018820903,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.68
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.13
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.19
+        }
+      ]
+    },
+    {
+      "Start": 1018820903,
+      "End": 1021455116,
+      "Components": [
+        {
+          "ComponentName": "DegreeModelComponent",
+          "Weight": 0.64
+        },
+        {
+          "ComponentName": "RandomAttachment",
+          "Weight": 0.1
+        },
+        {
+          "ComponentName": "TriangleClosure",
+          "Weight": 0.26
+        }
+      ]
+    },
+    {
+      "Start": 1021455116,
       "End": 1024090329,
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.7
+          "Weight": 0.81
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.11
+          "Weight": 0.0
         },
         {
           "ComponentName": "TriangleClosure",
@@ -197,7 +197,7 @@
   ],
   "OperationModel": {
     "Name": "Clone",
-    "Start": 946684800,
+    "Start": 997747200,
     "FileName": "experiments/enron/enron.feta"
   }
 }
