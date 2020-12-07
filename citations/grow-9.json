@@ -20,15 +20,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.27
+          "Weight": 0.24
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.12
+          "Weight": 0.09
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.61
+          "Weight": 0.67
         }
       ]
     },
@@ -38,15 +38,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.25
+          "Weight": 0.22
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.09
+          "Weight": 0.07
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.66
+          "Weight": 0.71
         }
       ]
     },
@@ -56,15 +56,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.23
+          "Weight": 0.2
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.08
+          "Weight": 0.06
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.69
+          "Weight": 0.74
         }
       ]
     },
@@ -74,15 +74,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.19
+          "Weight": 0.17
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.11
+          "Weight": 0.09
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.7
+          "Weight": 0.74
         }
       ]
     },
@@ -92,15 +92,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.18
+          "Weight": 0.16
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.1
+          "Weight": 0.08
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.72
+          "Weight": 0.76
         }
       ]
     },
@@ -110,15 +110,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.18
+          "Weight": 0.15
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.08
+          "Weight": 0.06
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.74
+          "Weight": 0.79
         }
       ]
     },
@@ -128,15 +128,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.17
+          "Weight": 0.15
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.07
+          "Weight": 0.05
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.76
+          "Weight": 0.8
         }
       ]
     },
@@ -146,15 +146,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.17
+          "Weight": 0.14
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.07
+          "Weight": 0.06
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.76
+          "Weight": 0.8
         }
       ]
     },
@@ -164,15 +164,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.16
+          "Weight": 0.14
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.06
+          "Weight": 0.05
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.78
+          "Weight": 0.81
         }
       ]
     },
@@ -182,15 +182,15 @@
       "Components": [
         {
           "ComponentName": "DegreeModelComponent",
-          "Weight": 0.15
+          "Weight": 0.13
         },
         {
           "ComponentName": "RandomAttachment",
-          "Weight": 0.07
+          "Weight": 0.05
         },
         {
           "ComponentName": "TriangleClosure",
-          "Weight": 0.78
+          "Weight": 0.82
         }
       ]
     }

@@ -1,0 +1,3 @@
+{"view": [ {"changepoints": 3, "intervals": [
+{"start":820800000, "c0max" : 9.84707878117212, "raw": 126668.31703090992, "choices": 55382, "models": [{"Degree": 0.23},{"Random": 0.07},{"TriangleClosure": 0.7}]},
+{"start":869589000, "c0max" : 14.136980931889196, "raw": 208942.17817417637, "choices": 78882, "models": [{"Degree": 0.17},{"Random": 0.08},{"TriangleClosure": 0.75}]},

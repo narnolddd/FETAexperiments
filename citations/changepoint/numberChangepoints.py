@@ -11,7 +11,7 @@ tmp = root+"tmp.json"
 start = 820800000
 end = 1015956000
 
-results_file = root+"noChangepoints2.json"
+results_file = root+"noChangepoints4.json"
 with open(results_file,'w') as f:
     f.write("{\"view\": [ ")
     f.close()
@@ -22,9 +22,9 @@ fmm = FitMixedModel(start,end,1, debug=True)
 act = Action(fmm)
 data = DataObject("data/cit-HepPh-new.txt")
 
-max_intervals = 20
+max_intervals = 5
 
-for ni in range(1,max_intervals):
+for ni in range(4,max_intervals):
     intervals = np.linspace(start,end,num=ni+1)
     obm = []
     for i in range(ni):
