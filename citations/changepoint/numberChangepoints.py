@@ -22,9 +22,9 @@ fmm = FitMixedModel(start,end,1, debug=True)
 act = Action(fmm)
 data = DataObject("data/cit-HepPh-new.txt")
 
-max_intervals = 5
+max_intervals = 6
 
-for ni in range(4,max_intervals):
+for ni in range(5,max_intervals):
     intervals = np.linspace(start,end,num=ni+1)
     obm = []
     for i in range(ni):

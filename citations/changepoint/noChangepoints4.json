@@ -1,3 +1,8 @@
-{"view": [ {"changepoints": 3, "intervals": [
-{"start":820800000, "c0max" : 9.84707878117212, "raw": 126668.31703090992, "choices": 55382, "models": [{"Degree": 0.23},{"Random": 0.07},{"TriangleClosure": 0.7}]},
-{"start":869589000, "c0max" : 14.136980931889196, "raw": 208942.17817417637, "choices": 78882, "models": [{"Degree": 0.17},{"Random": 0.08},{"TriangleClosure": 0.75}]},
+{"view": [ {"changepoints": 4, "intervals": [
+{"start":820800000, "c0max" : 9.114502354662484, "raw": 92438.72867624111, "choices": 41830, "models": [{"Degree": 0.23},{"Random": 0.08},{"TriangleClosure": 0.69}]},
+{"start":859831200, "c0max" : 12.936861417235898, "raw": 149319.2675353888, "choices": 58326, "models": [{"Degree": 0.18},{"Random": 0.08},{"TriangleClosure": 0.74}]},
+{"start":898862400, "c0max" : 17.436809161715292, "raw": 218867.44114719672, "choices": 76565, "models": [{"Degree": 0.15},{"Random": 0.07},{"TriangleClosure": 0.78}]},
+{"start":937893600, "c0max" : 21.097794738306355, "raw": 272016.32369130274, "choices": 89210, "models": [{"Degree": 0.14},{"Random": 0.06},{"TriangleClosure": 0.8}]},
+{"start":976924800, "c0max" : 24.069634333059845, "raw": 332368.03339227434, "choices": 104487, "models": [{"Degree": 0.13},{"Random": 0.05},{"TriangleClosure": 0.82}]}],
+"finalc0": 17.72820191027048, "finalraw": 1065009.7944424036, "finalchoices": 370418}
+]}
