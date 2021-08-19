@@ -67,21 +67,51 @@ def get_averages(dfs):
                         'assortativity', 'cutoff', 'singletons', 'doubletons', 'triangles']
     return averages
 
+def get_stds(dfs):
+    stds = pd.concat(dfs).groupby(level=1).std()
+    stds.columns = ['timestamp', 'nodes', 'links', 'avgdeg', 'density', 'maxdeg', 'clustercoeff', 'meandegsq',
+                        'assortativity', 'cutoff', 'singletons', 'doubletons', 'triangles']
+    return stds
+
 lineobjects={}
 
 
 for model in models:
     label = model
+    if model=="BestMix":
+        label="$0.6M_{BA}+0.16M_{rand} + 0.24M^{-1}_{tri}(25)$"
+    if model=="Real":
+        label="Real data measurements"
+    if model=="BA":
+        label = "$M_{BA}$"
+    if model=="TriInv25":
+        label="$M^{-1}_{tri}(25)$"
+    if model=="Rand":
+        label="$M_{rand}$"
     dfs, times = get_dfs(model)
     averages = get_averages(dfs)
+    stds = get_stds(dfs)
 
     lineobjects[label]=ax[0,0].plot(times, averages['maxdeg'], color= compcol[model], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[0,0].fill_between(times, averages['maxdeg']-stds['maxdeg'], averages['maxdeg']+stds['maxdeg'], color=compcol[model], alpha=0.2)
+
     ax[1,0].plot(times, averages['clustercoeff'],label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,0].fill_between(times, averages['clustercoeff']-stds['clustercoeff'], averages['clustercoeff']+stds['clustercoeff'], color=compcol[model], alpha=0.2)
+
     ax[0,1].plot(times, averages['meandegsq'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[0,1].fill_between(times, averages['meandegsq']-stds['meandegsq'], averages['meandegsq']+stds['meandegsq'], color=compcol[model], alpha=0.2)
+
     ax[3,0].plot(times, averages['assortativity'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[2,0].plot(times, averages['singletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[3,0].fill_between(times, averages['assortativity']-stds['assortativity'], averages['assortativity']+stds['assortativity'], color=compcol[model], alpha=0.2)
+
+    ax[2,0].plot(times, averages['singletons']/10000, label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[2,0].fill_between(times, averages['singletons']/10000-stds['singletons']/10000, averages['singletons']/10000+stds['singletons']/10000, color=compcol[model], alpha=0.2)
+
     ax[2,1].plot(times, averages['doubletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,1].plot(times, averages['triangles'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[2,1].fill_between(times, averages['doubletons']-stds['doubletons'], averages['doubletons']+stds['doubletons'], color=compcol[model], alpha=0.2)
+
+    ax[1,1].plot(times, averages['triangles']/100000, label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,1].fill_between(times, averages['triangles']/100000-stds['triangles']/100000, averages['triangles']/100000+stds['triangles']/100000, color=compcol[model], alpha=0.2)
 
 for row in range(4):
     for col in range(2):
@@ -95,7 +125,8 @@ for row in range(4):
             label.set_rotation(30)
 
 ax[-1, -1].axis('off')
-fig.legend([lineobjects[item] for item in lineobjects.keys()], labels=[lineobjects[item][0].get_label() for item in lineobjects.keys()], loc="lower right")
+fig.legend([lineobjects[item] for item in lineobjects.keys()], labels=[lineobjects[item][0].get_label() for item in lineobjects.keys()], bbox_to_anchor=(0.75,0.15), loc="center")
 plt.xticks(rotation='vertical')
 plt.tight_layout()
+plt.savefig("/Users/narnolddd/Documents/PhDMAIN/NaomiThesis/plots/stackex_comparisons_2.pdf")
 plt.show()
