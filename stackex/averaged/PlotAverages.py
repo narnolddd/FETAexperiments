@@ -5,7 +5,8 @@ import matplotlib as mpl
 import datetime as dt
 from collections import defaultdict
 
-fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(15,5))
+a4_dims=(8.27,11.69)
+fig, ax = plt.subplots(nrows=4, ncols=2, figsize=a4_dims)
 
 x_major_lct = mpl.dates.AutoDateLocator(minticks=2,maxticks=10, interval_multiples=True)
 x_fmt = mpl.dates.AutoDateFormatter(x_major_lct)
@@ -14,12 +15,12 @@ plt.xlabel("Timestamp")
 ax[0,0].set_title('Maximum Degree')
 ax[0,0].xaxis.set_major_locator(x_major_lct)
 ax[0,0].xaxis.set_major_formatter(x_fmt)
-ax[0,1].set_title('Average Clustering Coefficient')
-ax[0,2].set_title('Mean squared degree')
-ax[0,3].set_title('Degree Assortativity')
-ax[1,0].set_title('Singleton Nodes')
-ax[1,1].set_title('Doubleton Nodes')
-ax[1,2].set_title('Number of Triangles')
+ax[1,0].set_title('Average Clustering Coefficient')
+ax[0,1].set_title('Mean squared degree')
+ax[3,0].set_title('Degree Assortativity')
+ax[2,0].set_title('Singleton Nodes')
+ax[2,1].set_title('Doubleton Nodes')
+ax[1,1].set_title('Number of Triangles')
 
 complinestyle= defaultdict(lambda: '--')
 complinestyle['BestMix']='-'
@@ -75,16 +76,16 @@ for model in models:
     averages = get_averages(dfs)
 
     lineobjects[label]=ax[0,0].plot(times, averages['maxdeg'], color= compcol[model], label=label, linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[0,1].plot(times, averages['clustercoeff'],label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[0,2].plot(times, averages['meandegsq'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[0,3].plot(times, averages['assortativity'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,0].plot(times, averages['singletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,1].plot(times, averages['doubletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
-    ax[1,2].plot(times, averages['triangles'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,0].plot(times, averages['clustercoeff'],label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[0,1].plot(times, averages['meandegsq'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[3,0].plot(times, averages['assortativity'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[2,0].plot(times, averages['singletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[2,1].plot(times, averages['doubletons'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
+    ax[1,1].plot(times, averages['triangles'], label=label, color= compcol[model], linestyle=complinestyle[model], linewidth=compthickness[model], alpha=compalpha)
 
-for row in range(2):
-    for col in range(4):
-        if [ row, col ]== [1,3]:
+for row in range(4):
+    for col in range(2):
+        if [ row, col ]== [3,1]:
             continue
         ax[row,col].xaxis.set_major_locator(x_major_lct)
         ax[row,col].xaxis.set_major_formatter(x_fmt)
