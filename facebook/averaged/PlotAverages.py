@@ -78,9 +78,15 @@ lineobjects={}
 
 for model in models:
     if model=="BestMix":
-        label='$0.61M_{\text{DP}(0.8) + 0.33M_{\text{rand}} + 0.06M_{\text{tri}}(15)}$'
-    else:
-        label = model
+        label='$0.61M_{DP}(0.8) + 0.33M_{rand} + 0.06M_{tri}(15)$'
+    if model=="DP":
+        label="$M_{DP}(0.8)$"
+    if model=="Rand":
+        label="$M_{rand}$"
+    if model=="Tri":
+        label="$M_{tri}(15)$"
+    if model=="Real":
+        label="Real data measurements"
     dfs, times = get_dfs(model)
     averages = get_averages(dfs)
     stds = 0.5* get_stds(dfs)
